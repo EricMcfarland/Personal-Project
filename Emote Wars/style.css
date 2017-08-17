@@ -1,0 +1,26 @@
+table, tr, td{
+    border:2px solid black;
+}
+#box{
+    width:200px;
+    height:200px;
+    border:1px grey solid;
+}
+.boardSpace{
+    background-color : lightslategrey;
+    width:28px;
+    height:28px;
+    background-repeat: no-repeat;
+}
+.greenBackground{
+    background-color:green;
+}
+.redBackground{
+    background-color:red;
+}
+.emoteBorder{
+    border: 3px solid black;
+}
+img{
+    margin: 7px;
+}

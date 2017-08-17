@@ -1,0 +1,15 @@
+{
+  "name": "muh_chat_experience_bot",
+  "version": "1.0.0",
+  "description": "Bot to grab twitch chat info",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EricMcFarland",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "tmi.js": "^1.2.1"
+  }
+}
