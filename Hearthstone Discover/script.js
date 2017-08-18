@@ -1,7 +1,7 @@
 
 
 $(document).ready(function () {
-  
+
 
   var config = {
     apiKey: "AIzaSyDySolLS5sfsLlP3ouHp_CmdesJS-pDaZE",
@@ -15,12 +15,17 @@ $(document).ready(function () {
 
   var database = firebase.database();
   console.log(database)
-  var ref = database.ref("test");
-  ref.set({ a: "aa" });
+  var ref = database.ref("urls");
+  var image = database.ref('urls/Mana Bind').once('value').then(function (snapshot) {
+    var url = snapshot.val();
+    console.log(url)
+     $("body").append("<img src="+url+">");
+    // ...
+  });
 
 
 
-  // $("body").append("<img src=http://localhost:8080/Kazakus.png>");
+  
   // //Loading images into the webpage
 
   // var folder = "http://localhost:8080/imageList";
