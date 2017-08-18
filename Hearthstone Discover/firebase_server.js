@@ -1,72 +1,193 @@
 // Initialize Firebase
 //  const firebase = require('firebase/app')
-const firebase = require('firebase/app');require("firebase/auth");
-require("firebase/database");
+const firebase = require('firebase');
 const unirest = require('unirest');
+const admin = require("firebase-admin");
+const http = require('http');
 var cardList = {};
-var database = firebase.database();
-var admin = require("firebase-admin");
+
+// var config = {
+//   apiKey: "AIzaSyDySolLS5sfsLlP3ouHp_CmdesJS-pDaZE",
+//   authDomain: "hearthstone-discover.firebaseapp.com",
+//   databaseURL: "https://hearthstone-discover.firebaseio.com",
+//   projectId: "hearthstone-discover",
+//   storageBucket: "",
+//   messagingSenderId: "541695389765"
+// };
+// firebase.initializeApp(config);
+// var database = firebase.database();
+// var ref = database.ref("test");
+// ref.push({a:"aa"});
+
+//.... I DONT KNOW WHAT I"M DOING WITH THE ADMIN SHIT
 
 // Fetch the service account key JSON file contents
-var serviceAccount = require("path/to/AIzaSyDySolLS5sfsLlP3ouHp_CmdesJS-pDaZE.json");
+var serviceAccount = require("./HD-service-account.json");
 
 // Initialize the app with a service account, granting admin privileges
+
+// firebase.initializeApp({
+//   serviceAccount: serviceAccount,
+//   databaseURL: "https://hearthstone-discover.firebaseio.com/",
+//   authDomain: "hearthstone-discover.firebaseapp.com",
+//   projectId: "hearthstone-discover",
+//   messagingSenderId: "541695389765"
+// })
+
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "hearthstone-discover.firebaseapp.com"
+  databaseURL: "https://hearthstone-discover.firebaseio.com/",
+  authDomain: "hearthstone-discover.firebaseapp.com",
+  projectId: "hearthstone-discover",
+  databaseAuthVariableOverride: {
+    uid: "my-service-worker"
+  }
+
 });
+console.log("app initialized")
 
 // As an admin, the app has access to read and write all data, regardless of Security Rules
 var db = admin.database();
-var ref = db.ref("restricted_access/secret_document");
-ref.once("value", function(snapshot) {
-  console.log(snapshot.val());
-});
 
-var config = {
-  apiKey: "AIzaSyDySolLS5sfsLlP3ouHp_CmdesJS-pDaZE",
-  authDomain: "hearthstone-discover.firebaseapp.com",
-  databaseURL: "https://hearthstone-discover.firebaseio.com",
-  projectId: "hearthstone-discover",
-  storageBucket: "",
-  messagingSenderId: "541695389765"
-};
-firebase.initializeApp(config);
-// console.log(firebase)
+//replace with the card images
+
 
 unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
   .header("X-Mashape-Key", "KOkEd2dvbzmshtB9Pnai1Z0TTA6Xp1HjiXPjsnn294AfPssRiT")
   .end((result) => {
     //get the card list from the unirest API
     console.log(result.status, result.headers);
-    // cardList = result.body;
-    var ref = database.ref('cards');
-    ref.push(result.body);
 
-    //Add the list to firebase
-    //Add each individual card object to firebase
+    cardList = result.body
+    cardList = renameKeys(cardList);
+
+    //send cardlist to FB DB
+    var ref = db.ref('cardList');
+    ref.set(cardList).then(function () {
+      //TODO: start adding images 
+      //TODO: Add full data
+      //TODO: Just add URLs and use that
+      for (var expansion in cardList) {
+        if (cardList.hasOwnProperty(expansion)) {
+          if (!["Tavern Brawl", "Credits", "Missions", "System", "Debug"].includes(expansion)) {
+            //go through only the cards listed within the expansions
+
+            for (var card in cardList[expansion]) {
+              if (cardList[expansion].hasOwnProperty(card)) {
+                if (!["Hero Power", "Enchantment"].includes(cardList[expansion][card].type)) {
+                  var ref = db.ref('urls').child(card);
+                  var url = "http://media.services.zam.com/v1/media/byName/hs/cards/enus/" + cardList[expansion][card].cardId + ".png"
+                  ref.set(url).then(() => {
+                    // console.log(cardList[expansion][card].name + " url has been saved")
+                  }).catch(function (error) {
+                    // console.log('Synchronization failed for: ' + cardList[expansion][card].name);
+                  });
+                  // retrieveImage(cardList[expansion][card]);
+                  // console.log('Synchronization succeeded');
+                }
+              }
+            }
+          }
+        }
+      }
+    })
+      .catch(function (error) {
+        console.error(error.message);
+      });
+
+  })
+
+function retrieveImage(cardObject) {
+  console.log("uploading images to FB")
+  request = http.get("http://media.services.zam.com/v1/media/byName/hs/cards/enus/" + cardObject.cardId + ".png",
+    (res) => {
+      // res.setTimeout(25000);
+      // console.log("type is: " + cardObject.type)
+      const { statusCode } = res
+
+      let error
+      if (statusCode !== 200) {
+        error = new Error('Request Failed.\n' +
+          `Status Code: ${statusCode}\n` +
+          `card name: ${cardObject.name}`);
+      }
+      if (error) {
+        console.error(error.message)
+        res.resume()
+        return
+      }
+      var imagedata = ''
+      res.setEncoding('binary')
+
+      res.on('data', (chunk) => {
+        imagedata += chunk
+      })
+      res.on('end', () => {
+        try {
+          var ref = db.ref('images');
+          ref.set(imagedata).then(() => {
+            console.log(carbObject.name + " image has been saved")
+          }).catch(function (error) {
+            console.log('Synchronization failed for: ' + cardObject.name);
+          });
+
+        }
+        catch (e) {
+          console.error(e.message);
+        }
+        // console.log('File saved.')
+      })
+    }).on('error', (e) => {
+
+      console.error(`${cardObject.name} : ${e.message}`)
+    })
+}
 
 
+//Renames the unnamed card keys under each expansion to be the name of the card
+function renameKeys(list) {
+  for (var expansion in list) {
+    if (list.hasOwnProperty(expansion)) {
+      for (var card in list[expansion]) {
+        if (list[expansion].hasOwnProperty(card)) {
+
+          var expansionObject = list[expansion]
+
+          //remove characters not allowed as keys
+          var cardName = list[expansion][card].name.replace(/['"*!:.?|[\]\/]+/g, '')
 
 
-    // var path = './cardList.json'
+          //rekey the unkeyed card objects to be defined by their card name
+          if (card !== cardName) {
+            Object.defineProperty(expansionObject, cardName,
+              Object.getOwnPropertyDescriptor(expansionObject, card));
+            delete expansionObject[card];
 
-    // fs.open(path, 'r+', 0666, (err, fd) => {
-    //     if (err) { throw err; }
-    //     console.log("file opened");
+          }
+        }
+      }
+    }
+  }
+  return list
+}
 
-    //     //writes all the data from twitch emote list to my local emote_list.json
-    //     fs.writeFile(fd, JSON.stringify(cardList, null, 2), function (err) {
-    //         if (err) { throw err; }
-    //         // console.log(cardList.length);
-    //         console.log('file written');
 
-    //         fs.close(fd, function () {
-    //             console.log('file closed');
-    //         });
-    //     });
-    // });
-    // console.log("response has completed")
-    // // console.log(Object.keys(cardList));
+  // var path = './cardList.json'
 
-  });
+  // fs.open(path, 'r+', 0666, (err, fd) => {
+  //     if (err) { throw err; }
+  //     console.log("file opened");
+
+  //     //writes all the data from twitch emote list to my local emote_list.json
+  //     fs.writeFile(fd, JSON.stringify(cardList, null, 2), function (err) {
+  //         if (err) { throw err; }
+  //         // console.log(cardList.length);
+  //         console.log('file written');
+
+  //         fs.close(fd, function () {
+  //             console.log('file closed');
+  //         });
+  //     });
+  // });
+  // console.log("response has completed")
+  // // console.log(Object.keys(cardList));
