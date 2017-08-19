@@ -2,7 +2,6 @@
 
 $(document).ready(function () {
 
-
   var config = {
     apiKey: "AIzaSyDySolLS5sfsLlP3ouHp_CmdesJS-pDaZE",
     authDomain: "hearthstone-discover.firebaseapp.com",
@@ -14,14 +13,23 @@ $(document).ready(function () {
   firebase.initializeApp(config);
 
   var database = firebase.database();
-  console.log(database)
-  var ref = database.ref("urls");
-  var image = database.ref('urls/Mana Bind').once('value').then(function (snapshot) {
-    var url = snapshot.val();
-    console.log(url)
-     $("body").append("<img src="+url+">");
-    // ...
+ 
+  //get the card list to use as sorting reference
+  
+  var cardList = database.ref('cardList').once('value').then(function (snapshot) {
+    var cardList = snapshot.val();
+    console.log(cardList)
   });
+  
+  // var ref = database.ref("urls");
+  // var image = database.ref('urls/Mana Bind').once('value').then(function (snapshot) {
+  //   var url = snapshot.val();
+  //   console.log(url)
+  //    $("body").append("<img src="+url+">");
+  //   // ...
+  // });
+
+
 
 
 

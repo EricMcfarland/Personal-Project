@@ -60,13 +60,22 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
 
     cardList = result.body
     cardList = renameKeys(cardList);
+    var ref = db.ref();
+    ref.child('cardList').remove()
+    ref.child('discover pools').remove()
+    ref.child('urls').remove()
+    ref.child('users').remove()
+    ref.child('test').remove()
+    ref.child('images').remove()
+    ref.child('cards').remove()
+    
 
     //send cardlist to FB DB
     var ref = db.ref('cardList');
     ref.set(cardList).then(function () {
       //TODO: start adding images 
       //TODO: Add full data
-      //TODO: Just add URLs and use that
+      //DONE: Just add URLs and use that
       for (var expansion in cardList) {
         if (cardList.hasOwnProperty(expansion)) {
           if (!["Tavern Brawl", "Credits", "Missions", "System", "Debug"].includes(expansion)) {
@@ -74,13 +83,58 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
 
             for (var card in cardList[expansion]) {
               if (cardList[expansion].hasOwnProperty(card)) {
-                if (!["Hero Power", "Enchantment"].includes(cardList[expansion][card].type)) {
+                var cardObject = cardList[expansion][card];
+                var cardType = cardList[expansion][card].type;
+                var cardClass = cardList[expansion][card].playerClass;
+                var cardName = cardList[expansion][card].name.replace(/['"*!:.?|[\]\/]+/g, '');
+
+                if (!["Hero Power", "Enchantment"].includes(cardType)) {
                   var ref = db.ref('urls').child(card);
                   var url = "http://media.services.zam.com/v1/media/byName/hs/cards/enus/" + cardList[expansion][card].cardId + ".png"
                   ref.set(url).then(() => {
                     // console.log(cardList[expansion][card].name + " url has been saved")
                   }).catch(function (error) {
-                    // console.log('Synchronization failed for: ' + cardList[expansion][card].name);
+                    //  console.log('Synchronization failed for: ' + cardList[expansion][card].name);
+                  });
+
+                  //Populate the discover pools
+
+                  //Put Standard cards into their discover pool
+                  
+                  if(["Classic","Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan","Journey to Un'Goro","Knights of the Frozen Throne"].includes(expansion)){
+                    // --------By Card Type-----
+                    ref = db.ref('discover pools').child('Standard').child(cardType).child(cardClass).child(cardName)
+                    ref.set(cardObject).then(() => {
+                      // console.log(cardList[expansion][card].name + " url has been saved")
+                    }).catch(function (error) {
+                       console.log('Synchronization failed for: ' + cardName);
+                    });
+
+                    //---------By Class---------
+                    ref = db.ref('discover pools').child('Standard').child('Class').child(cardClass).child(cardType).child(cardName)
+                    
+                    ref.set(cardObject).then(() => {
+                      // console.log(cardList[expansion][card].name + " url has been saved")
+                    }).catch(function (error) {
+                       console.log('Synchronization failed for: ' + cardName);
+                    });
+                  }
+
+                  //Put every card into Wild discover pool
+                   //--------By Card Type---------
+                  ref = db.ref('discover pools').child('Wild').child(cardType).child(cardClass).child(cardName)
+                  ref.set(cardObject).then(() => {
+                    // console.log(cardList[expansion][card].name + " url has been saved")
+                  }).catch(function (error) {
+                     console.log('Synchronization failed for: ' + cardName);
+                  });
+                  //---------By Class---------
+                  ref = db.ref('discover pools').child('Wild').child('Class').child(cardClass).child(cardType).child(cardName)
+                  
+                  ref.set(cardObject).then(() => {
+                    // console.log(cardList[expansion][card].name + " url has been saved")
+                  }).catch(function (error) {
+                     console.log('Synchronization failed for: ' + cardName);
                   });
                   // retrieveImage(cardList[expansion][card]);
                   // console.log('Synchronization succeeded');
