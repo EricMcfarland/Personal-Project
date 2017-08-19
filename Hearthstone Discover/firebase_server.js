@@ -100,9 +100,8 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
                   //Populate the discover pools
 
                   //Put Standard cards into their discover pool
-                  
                   if(["Classic","Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan","Journey to Un'Goro","Knights of the Frozen Throne"].includes(expansion)){
-                    // --------By Card Type-----
+                    // --------STANDARD: By Card Type-----
                     ref = db.ref('discover pools').child('Standard').child(cardType).child(cardClass).child(cardName)
                     ref.set(cardObject).then(() => {
                       // console.log(cardList[expansion][card].name + " url has been saved")
@@ -110,9 +109,8 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
                        console.log('Synchronization failed for: ' + cardName);
                     });
 
-                    //---------By Class---------
+                    //---------STANDARD: By Class---------
                     ref = db.ref('discover pools').child('Standard').child('Class').child(cardClass).child(cardType).child(cardName)
-                    
                     ref.set(cardObject).then(() => {
                       // console.log(cardList[expansion][card].name + " url has been saved")
                     }).catch(function (error) {
@@ -121,14 +119,14 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
                   }
 
                   //Put every card into Wild discover pool
-                   //--------By Card Type---------
+                   //--------WILD: By Card Type---------
                   ref = db.ref('discover pools').child('Wild').child(cardType).child(cardClass).child(cardName)
                   ref.set(cardObject).then(() => {
                     // console.log(cardList[expansion][card].name + " url has been saved")
                   }).catch(function (error) {
                      console.log('Synchronization failed for: ' + cardName);
                   });
-                  //---------By Class---------
+                  //---------WILD: By Class---------
                   ref = db.ref('discover pools').child('Wild').child('Class').child(cardClass).child(cardType).child(cardName)
                   
                   ref.set(cardObject).then(() => {

@@ -1,0 +1,23 @@
+#discover_pool{
+    display: inline-block;
+    position: relative;
+}
+.image_container{
+    width:150px;
+    height:auto; 
+}
+.card_image{
+    width:100%;
+    height: auto;;
+}
+.image_container img:hover{
+    width:200px;
+    height:auto;
+}
+
+#user_selection{
+    border: 3px solid black;
+    height: 250px;
+    overflow: hidden;
+
+}
