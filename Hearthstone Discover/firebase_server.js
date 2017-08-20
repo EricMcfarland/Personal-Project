@@ -223,6 +223,9 @@ function renameKeys(list) {
   return list
 }
 
+  
+
+
 
   // var path = './cardList.json'
 
