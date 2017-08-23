@@ -1,4 +1,4 @@
-
+var database = {}
 
 $(document).ready(function () {
 
@@ -14,7 +14,7 @@ $(document).ready(function () {
     messagingSenderId: "541695389765"
   };
   firebase.initializeApp(config);
-  var database = firebase.database();
+  database = firebase.database();
 
   //
   // ─── GET CARD LIST ──────────────────────────────────────────────────────────────
@@ -26,21 +26,22 @@ $(document).ready(function () {
 
   //TODO: Create handling for users to define discover pool
 
-  //
-  // ─── GET ALL MAGE SPELLS ────────────────────────────────────────────────────────
-  //
-  ref = database.ref().child('discover pools/Standard/Class/Mage/Spell')
-  var mageSpellList = ref.on('value', function (snapshot) {
-    var mageSpellList = snapshot.val();
-    console.log(mageSpellList)
-    for (card in mageSpellList) {
-      // console.log(card)
-      // console.log(mageSpellList[card].img)
-      if (mageSpellList.hasOwnProperty(card)) {
-        addImage(mageSpellList[card], "discover_pool")
-      }
-    }
-  }, (error) => { console.log("the read failed: " + error) })
+
+  // //
+  // // ─── GET ALL MAGE SPELLS ────────────────────────────────────────────────────────
+  // //
+  // ref = database.ref().child('discover pools/Standard/Class/Mage/Spell')
+  // var poolList = ref.on('value', function (snapshot) {
+  //   var poolList = snapshot.val();
+  //   console.log(poolList)
+  //   for (card in poolList) {
+  //     // console.log(card)
+  //     // console.log(poolList[card].img)
+  //     if (poolList.hasOwnProperty(card)) {
+  //       addImage(poolList[card], "discover_pool")
+  //     }
+  //   }
+  // }, (error) => { console.log("the read failed: " + error) })
 
 
   //
@@ -61,9 +62,48 @@ $(document).ready(function () {
   })
 });
 
+//GetPool() will get the discover pool based on the selected values in pull down menu
+//Also clears all the previous images
+//TODO: handle the invalid pull downs such as weapons, and hero for the classes without them
+//      Generate the options dynamically
+function getPool() {
+  var hsClass = $('#selector_class').val();
+  console.log(hsClass)
+  var cardType = $('#selector_type').val();
+  console.log(cardType)
+  var format = $('#selector_format').val();
+  console.log(format)
 
+  $('#discover_pool').empty();
+  var ref = database.ref().child('discover pools/' + format + '/Class/' + hsClass + '/' + cardType)
+  var poolList = ref.on('value', function (snapshot) {
+    var poolList = snapshot.val();
+    console.log(poolList)
+    for (card in poolList) {
+      // console.log(card)
+      // console.log(poolList[card].img)
+      if (poolList.hasOwnProperty(card)) {
+        addImage(poolList[card], "discover_pool")
+      }
+    }
+  }, (error) => { console.log("the read failed: " + error) })
+}
 
-
+function loadDiscoverCards() {
+  var format = $('#selector_format').val();
+  var ref = database.ref().child('discover pools/' + format + '/Discover Card/')
+  var poolList = ref.on('value', function (snapshot) {
+    var poolList = snapshot.val();
+    for (hsClass in poolList) {
+      for (type in poolList[hsClass]) {
+        for(card in poolList[hsClass][type]){
+          addImage(poolList[hsClass][type][card], "discover_cards")
+        }
+        
+      }
+    }
+  }, (error) => { console.log("the read failed: " + error) })
+}
 function addImage(card, container) {
   // console.log("addImage() called")
   var img = new Image();
@@ -79,20 +119,14 @@ function addImage(card, container) {
   $div.appendTo($("#" + container)) //main div
     .click(function () {
       console.log($("#user_selection > #" + card.cardId))
-      if ($("#user_selection > #" + card.cardId).length ==0) {
-        var $div = $("<div/>", { "class": "image_container", "id": card.cardId });
-        console.log($div)
+      if ($("#user_selection > #" + card.cardId).length == 0) {
 
-        //
-        // ──────────────────────────────────────────────────────────────────────────────── I ──────────
-        //   :::::: D E L E T I N G   W R O N G   I M A G E : :  :   :    :     :        :          :
-        // ──────────────────────────────────────────────────────────────────────────────────────────
-        //
+        // Not used?
+        // var $div = $("<div/>", { "class": "image_container", "id": card.cardId });
+        // console.log($div)
 
-        
-        $(this).clone().appendTo("#user_selection").click(() => {
-          console.log($(this.click))
-          $(this).remove();
+        var $div = $(this).clone(false).appendTo("#user_selection").on('click', (e) => {
+          $(e.currentTarget).remove()
         });
       }
     })

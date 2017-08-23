@@ -1,17 +1,53 @@
 <!Doctype html>
 <html>
-<head>
-     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-     <script type='text/javascript' src='C:/Users/Eric/Documents/Web Design/Personal Projects/Hearthstone Discover/script.js'></script>
-    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-     <link rel = 'stylesheet' href='style.css'>
-</head>
-<body>
-<h1>This site will act as a calculator to return discover probabilites</h1>
 
-<div id="odds_button">Calculate Odds</div>
-<div id= "user_selection"></div>
-<div id= "discover_pool"></div>
+<head>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script type='text/javascript' src='C:/Users/Eric/Documents/Web Design/Personal Projects/Hearthstone Discover/script.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <h1>This site will act as a calculator to return discover probabilites</h1>
+
+    <div id="odds_button">Calculate Odds</div>
+    <div>
+        <select id="selector_class">
+        
+            <option value ="Druid">Druid</option>
+            <option value ="Hunter">Hunter</option>
+            <option value ="Mage">Mage</option>
+            <option value ="Neutral">Neutral</option>
+            <option value ="Paladin">Paladin</option>
+            <option value ="Priest">Preist</option>
+            <option value ="Rogue">Rogue</option>
+            <option value ="Shaman">Shaman</option>
+            <option value ="Warlock">Warlock</option>
+            <option value ="Warrior">Warrior</option>
+            <option value ="Dream Card">Dream Card</option>
+            <option value ="Death Knight">Death Knight</option>
+        </select>
+
+        <select id="selector_type">
+            <option value="Minion">Minion</option>
+            <option value="Hero">Hero</option>
+            <option value="Spell">Spell</option>
+            <option value="Weapon">Weapon</option>
+        </select>
+
+        <select id="selector_format">
+            <option value = "Standard">Standard</option>
+            <option value="Wild">Wild</option>
+        </select>
+        <button type="button" onclick="getPool()">Load discover pool</button>
+    </div>
+    </div>
+    <div id="user_selection"></div>
+    <div id="discover_pool"></div>
+    <div id="discover_cards">
+        <button type="button" onclick="loadDiscoverCards()">Load all discover cards</button>
+    </div>
 </body>
 
 </html>

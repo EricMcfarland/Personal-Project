@@ -68,7 +68,7 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
     ref.child('test').remove()
     ref.child('images').remove()
     ref.child('cards').remove()
-    
+
 
     //send cardlist to FB DB
     var ref = db.ref('cardList');
@@ -100,42 +100,67 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
                   //Populate the discover pools
 
                   //Put Standard cards into their discover pool
-                  if(["Classic","Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan","Journey to Un'Goro","Knights of the Frozen Throne"].includes(expansion)){
-                    // --------STANDARD: By Card Type-----
-                    ref = db.ref('discover pools').child('Standard').child(cardType).child(cardClass).child(cardName)
-                    ref.set(cardObject).then(() => {
-                      // console.log(cardList[expansion][card].name + " url has been saved")
-                    }).catch(function (error) {
-                       console.log('Synchronization failed for: ' + cardName);
-                    });
+                  if (["Classic", "Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan", "One Night in Karazhan", "Journey to Un'Goro", "Knights of the Frozen Throne"].includes(expansion)) {
+                    // --------STANDARD: By Card Type----- TODO: MAY NOT NEED THIS
+                    // ref = db.ref('discover pools').child('Standard').child(cardType).child(cardClass).child(cardName)
+                    // ref.set(cardObject).then(() => {
+                    //   // console.log(cardList[expansion][card].name + " url has been saved")
+                    // }).catch(function (error) {
+                    //    console.log('Synchronization failed for: ' + cardName);
+                    // });
 
                     //---------STANDARD: By Class---------
                     ref = db.ref('discover pools').child('Standard').child('Class').child(cardClass).child(cardType).child(cardName)
                     ref.set(cardObject).then(() => {
                       // console.log(cardList[expansion][card].name + " url has been saved")
                     }).catch(function (error) {
-                       console.log('Synchronization failed for: ' + cardName);
+                      console.log('Synchronization failed for: ' + cardName);
                     });
+
+                    //----------STANDARD: Discover card ---------------
+                    ref = db.ref('discover pools').child('Standard').child('Discover Card').child(cardClass).child(cardType).child(cardName)
+                    if (cardObject.hasOwnProperty('text')) {
+                      if (cardObject.text.includes("Discover")) {
+
+                        ref.set(cardObject).then(() => {
+                          // console.log(cardList[expansion][card].name + " url has been saved")
+                        }).catch(function (error) {
+                          console.log('Synchronization failed for: ' + cardName);
+                        });
+                      }
+                    }
                   }
 
                   //Put every card into Wild discover pool
-                   //--------WILD: By Card Type---------
-                  ref = db.ref('discover pools').child('Wild').child(cardType).child(cardClass).child(cardName)
-                  ref.set(cardObject).then(() => {
-                    // console.log(cardList[expansion][card].name + " url has been saved")
-                  }).catch(function (error) {
-                     console.log('Synchronization failed for: ' + cardName);
-                  });
+                  //--------WILD: By Card Type--------- TODO: MAY NOT NEED THIS
+                  // ref = db.ref('discover pools').child('Wild').child(cardType).child(cardClass).child(cardName)
+                  // ref.set(cardObject).then(() => {
+                  //   // console.log(cardList[expansion][card].name + " url has been saved")
+                  // }).catch(function (error) {
+                  //    console.log('Synchronization failed for: ' + cardName);
+                  // });
                   //---------WILD: By Class---------
                   ref = db.ref('discover pools').child('Wild').child('Class').child(cardClass).child(cardType).child(cardName)
-                  
+
                   ref.set(cardObject).then(() => {
                     // console.log(cardList[expansion][card].name + " url has been saved")
                   }).catch(function (error) {
-                     console.log('Synchronization failed for: ' + cardName);
+                    console.log('Synchronization failed for: ' + cardName);
                   });
+                  if (cardObject.hasOwnProperty('text')) {
+                    if (cardObject.text.includes("Discover")) {
+
+                      ref.set(cardObject).then(() => {
+                        // console.log(cardList[expansion][card].name + " url has been saved")
+                      }).catch(function (error) {
+                        console.log('Synchronization failed for: ' + cardName);
+                      });
+                    }
+                  }
                   // retrieveImage(cardList[expansion][card]);
                   // console.log('Synchronization succeeded');
+
+
                 }
               }
             }
@@ -223,7 +248,7 @@ function renameKeys(list) {
   return list
 }
 
-  
+
 
 
 
