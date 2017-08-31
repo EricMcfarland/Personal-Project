@@ -1,6 +1,5 @@
 #discover_pool{
-    display: inline-block;
-    position: relative;
+
 }
 .image_container{
     width:150px;
@@ -20,4 +19,9 @@
     height: 250px;
     overflow: hidden;
 
+}
+
+.pool{
+    display: flex;
+    flex-wrap: wrap;
 }

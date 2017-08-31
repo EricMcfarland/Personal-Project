@@ -92,28 +92,24 @@ function getPool() {
 function loadDiscoverCards() {
   var format = $('#selector_format').val();
   var ref = database.ref().child('discover pools/' + format + '/Discover Card/')
-  var poolList = ref.on('value', function (snapshot) {
-    var poolList = snapshot.val();
-    for (hsClass in poolList) {
-      for (type in poolList[hsClass]) {
-        for(card in poolList[hsClass][type]){
-          addImage(poolList[hsClass][type][card], "discover_cards")
-        }
-        
-      }
+  var discoverCard = ref.on('value', function (snapshot) {
+    var discoverCard = snapshot.val();
+    for (card in discoverCard) {
+      addImage(discoverCard[card], "discover_cards")
     }
+
+
   }, (error) => { console.log("the read failed: " + error) })
 }
-function addImage(card, container) {
+//TODO: Add a callback to define what the click function should be
+function addImage(card, container, clickCallback) {
   // console.log("addImage() called")
   var img = new Image();
   $(img).attr({
     src: card.img,
     class: "card_image"
   })
-
   var $div = $("<div/>", { "class": "image_container", "id": card.cardId });
-
   $($div).append(img);
   // console.log($div)
   $div.appendTo($("#" + container)) //main div
@@ -121,9 +117,6 @@ function addImage(card, container) {
       console.log($("#user_selection > #" + card.cardId))
       if ($("#user_selection > #" + card.cardId).length == 0) {
 
-        // Not used?
-        // var $div = $("<div/>", { "class": "image_container", "id": card.cardId });
-        // console.log($div)
 
         var $div = $(this).clone(false).appendTo("#user_selection").on('click', (e) => {
           $(e.currentTarget).remove()

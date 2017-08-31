@@ -48,6 +48,8 @@ console.log("app initialized")
 
 // As an admin, the app has access to read and write all data, regardless of Security Rules
 var db = admin.database();
+var storage = admin.storage();
+
 
 //replace with the card images
 
@@ -60,119 +62,245 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
 
     cardList = result.body
     cardList = renameKeys(cardList);
+    console.log(cardList.Basic.Archmage)
+
     var ref = db.ref();
     ref.child('cardList').remove()
     ref.child('discover pools').remove()
-    ref.child('urls').remove()
     ref.child('users').remove()
     ref.child('test').remove()
     ref.child('images').remove()
     ref.child('cards').remove()
-
+    var ref = db.ref('cardList');
 
     //send cardlist to FB DB
-    var ref = db.ref('cardList');
     ref.set(cardList).then(function () {
       //TODO: start adding images 
       //TODO: Add full data
       //DONE: Just add URLs and use that
-      for (var expansion in cardList) {
-        if (cardList.hasOwnProperty(expansion)) {
-          if (!["Tavern Brawl", "Credits", "Missions", "System", "Debug"].includes(expansion)) {
-            //go through only the cards listed within the expansions
 
-            for (var card in cardList[expansion]) {
-              if (cardList[expansion].hasOwnProperty(card)) {
-                var cardObject = cardList[expansion][card];
-                var cardType = cardList[expansion][card].type;
-                var cardClass = cardList[expansion][card].playerClass;
-                var cardName = cardList[expansion][card].name.replace(/['"*!:.?|[\]\/]+/g, '');
-
-                if (!["Hero Power", "Enchantment"].includes(cardType)) {
-                  var ref = db.ref('urls').child(card);
-                  var url = "http://media.services.zam.com/v1/media/byName/hs/cards/enus/" + cardList[expansion][card].cardId + ".png"
-                  ref.set(url).then(() => {
-                    // console.log(cardList[expansion][card].name + " url has been saved")
-                  }).catch(function (error) {
-                    //  console.log('Synchronization failed for: ' + cardList[expansion][card].name);
-                  });
-
-                  //Populate the discover pools
-
-                  //Put Standard cards into their discover pool
-                  if (["Classic", "Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan", "One Night in Karazhan", "Journey to Un'Goro", "Knights of the Frozen Throne"].includes(expansion)) {
-                    // --------STANDARD: By Card Type----- TODO: MAY NOT NEED THIS
-                    // ref = db.ref('discover pools').child('Standard').child(cardType).child(cardClass).child(cardName)
-                    // ref.set(cardObject).then(() => {
-                    //   // console.log(cardList[expansion][card].name + " url has been saved")
-                    // }).catch(function (error) {
-                    //    console.log('Synchronization failed for: ' + cardName);
-                    // });
-
-                    //---------STANDARD: By Class---------
-                    ref = db.ref('discover pools').child('Standard').child('Class').child(cardClass).child(cardType).child(cardName)
-                    ref.set(cardObject).then(() => {
-                      // console.log(cardList[expansion][card].name + " url has been saved")
-                    }).catch(function (error) {
-                      console.log('Synchronization failed for: ' + cardName);
-                    });
-
-                    //----------STANDARD: Discover card ---------------
-                    ref = db.ref('discover pools').child('Standard').child('Discover Card').child(cardClass).child(cardType).child(cardName)
-                    if (cardObject.hasOwnProperty('text')) {
-                      if (cardObject.text.includes("Discover")) {
-
-                        ref.set(cardObject).then(() => {
-                          // console.log(cardList[expansion][card].name + " url has been saved")
-                        }).catch(function (error) {
-                          console.log('Synchronization failed for: ' + cardName);
-                        });
-                      }
-                    }
-                  }
-
-                  //Put every card into Wild discover pool
-                  //--------WILD: By Card Type--------- TODO: MAY NOT NEED THIS
-                  // ref = db.ref('discover pools').child('Wild').child(cardType).child(cardClass).child(cardName)
-                  // ref.set(cardObject).then(() => {
-                  //   // console.log(cardList[expansion][card].name + " url has been saved")
-                  // }).catch(function (error) {
-                  //    console.log('Synchronization failed for: ' + cardName);
-                  // });
-                  //---------WILD: By Class---------
-                  ref = db.ref('discover pools').child('Wild').child('Class').child(cardClass).child(cardType).child(cardName)
-
-                  ref.set(cardObject).then(() => {
-                    // console.log(cardList[expansion][card].name + " url has been saved")
-                  }).catch(function (error) {
-                    console.log('Synchronization failed for: ' + cardName);
-                  });
-                  if (cardObject.hasOwnProperty('text')) {
-                    if (cardObject.text.includes("Discover")) {
-
-                      ref.set(cardObject).then(() => {
-                        // console.log(cardList[expansion][card].name + " url has been saved")
-                      }).catch(function (error) {
-                        console.log('Synchronization failed for: ' + cardName);
-                      });
-                    }
-                  }
-                  // retrieveImage(cardList[expansion][card]);
-                  // console.log('Synchronization succeeded');
+      //
+      // ───  ────────────────────────────────────────────────────────────
+      //
 
 
-                }
+      //   for (var expansion in cardList) {
+      //     if (cardList.hasOwnProperty(expansion)) {
+      //       if (!["Tavern Brawl", "Credits", "Missions", "System", "Debug"].includes(expansion)) {
+      //         //go through only the cards listed within the expansions
+
+      //         for (var card in cardList[expansion]) {
+      //           if (cardList[expansion].hasOwnProperty(card)) {
+      //             var cardObject = cardList[expansion][card];
+      //             var cardType = cardList[expansion][card].type;
+      //             var cardClass = cardList[expansion][card].playerClass;
+      //             var cardName = cardList[expansion][card].name.replace(/['"*!:.?|[\]\/]+/g, '');
+
+      //             if (!["Hero Power", "Enchantment"].includes(cardType)) {
+      //               // var ref = db.ref('urls').child(card);
+      //               // var url = "http://media.services.zam.com/v1/media/byName/hs/cards/enus/" + cardList[expansion][card].cardId + ".png"
+
+      //               //
+      //               // SAVE TO DATABASE
+      //               //
+      //               ref.set(url).then(() => {
+      //                 // console.log(cardList[expansion][card].name + " url has been saved")
+      //               }).catch(function (error) {
+      //                 //  console.log('Synchronization failed for: ' + cardList[expansion][card].name);
+      //               });
+
+      //               //
+      //               // POPULATE THE DISCOVER POOLS
+      //               //
+      //               //Put Standard cards into their discover pool
+      //               if (["Classic", "Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan", "One Night in Karazhan", "Journey to Un'Goro", "Knights of the Frozen Throne"].includes(expansion)) {
+      //                 // --------STANDARD: By Card Type----- TODO: MAY NOT NEED THIS
+
+      //                 //---------STANDARD: By Class---------
+      //                 ref = db.ref('discover pools').child('Standard').child('Class').child(cardClass).child(cardType).child(cardName)
+      //                 ref.set(cardObject).then(() => {
+      //                   // console.log(cardList[expansion][card].name + " url has been saved")
+      //                 }).catch(function (error) {
+      //                   console.log('Synchronization failed for: ' + cardName);
+      //                 });
+
+      //                 //----------STANDARD: Discover card ---------------
+      //                 ref = db.ref('discover pools').child('Standard').child('Discover Card').child(cardName)
+      //                 if (cardObject.hasOwnProperty('text')) {
+      //                   if (cardObject.text.includes("Discover")) {
+
+      //                     ref.set(cardObject).then(() => {
+      //                     }).catch(function (error) {
+      //                       console.log('Synchronization failed for: ' + cardName);
+      //                     });
+      //                   }
+      //                 }
+      //               }
+
+      //               //Put every card into Wild discover pool
+      //               //---------WILD: By Class---------
+      //               ref = db.ref('discover pools').child('Wild').child('Class').child(cardClass).child(cardType).child(cardName)
+
+      //               ref.set(cardObject).then(() => {
+      //                 // console.log(cardList[expansion][card].name + " url has been saved")
+      //               }).catch(function (error) {
+      //                 console.log('Synchronization failed for: ' + cardName);
+      //               });
+      //               if (cardObject.hasOwnProperty('text')) {
+      //                 if (cardObject.text.includes("Discover")) {
+
+      //                   ref.set(cardObject).then(() => {
+      //                     // console.log(cardList[expansion][card].name + " url has been saved")
+      //                   }).catch(function (error) {
+      //                     console.log('Synchronization failed for: ' + cardName);
+      //                   });
+      //                 }
+      //               }
+      //               // retrieveImage(cardList[expansion][card]);
+      //               // console.log('Synchronization succeeded');
+
+
+      //             }
+      //           }
+      //         }
+      //       }
+      //     }
+      //   }
+      // })
+      //   .catch(function (error) {
+      //     console.error(error.message);
+      //   });
+
+      //
+      // ───  ────────────────────────────────────────────────────────────
+      //
+
+
+    })
+
+
+    //populate the discover pool
+    //then recursively populate the discover cards
+    getCardObjectsFromList(cardList, (cards) => {
+      for (card in cards) {
+        var cardObject = cards[card];
+        var cardType = cardObject.type;
+        var cardClass = cardObject.playerClass;
+        var cardName = cardObject.name.replace(/['"*!:.?|[\]\/]+/g, '');
+        var cardSet = cardObject.cardSet;
+        var cardMechanics = cardObject.mechanics;
+        var cardCost = cardObject.cost;
+        var cardImage = cardObject.img;
+        
+
+        //STANDARD
+        if (["Classic", "Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan", "One Night in Karazhan", "Journey to Un'Goro", "Knights of the Frozen Throne"].includes(cardSet)) {
+          //---------STANDARD: By Class---------
+          ref = db.ref('discover pools').child('Standard').child('Class').child(cardClass).child(cardType).child(cardName)
+          ref.set(cardObject).then(() => {
+            // console.log(cardList[expansion][card].name + " url has been saved")
+          }).catch(function (error) {
+            console.log('Synchronization failed for: ' + cardName);
+          });
+
+          //----------STANDARD: Discover card ---------------
+          ref = db.ref('discover pools').child('Standard').child('Discover Card').child(cardName)
+          if (cardObject.hasOwnProperty('text')) {
+            if (cardObject.text.includes("<b>Discover</b>")) {
+
+              ref.set(cardObject).then(() => {
+                // console.log(cardList[expansion][card].name + " url has been saved")
+              }).catch(function (error) {
+                console.log('Synchronization failed for: ' + cardName);
+              });
+            }
+          }
+
+
+
+        }
+
+
+        //
+        // WILD
+        //
+
+
+        //CLASS
+        ref = db.ref('discover pools').child('Wild').child('Class').child(cardClass).child(cardType).child(cardName)
+
+        ref.set(cardObject).then(() => {
+          // console.log(cardList[expansion][card].name + " url has been saved")
+        }).catch(function (error) {
+          console.log('Synchronization failed for: ' + cardName);
+        });
+
+        //DISCOVER
+        ref = db.ref('discover pools').child('Wild').child('Discover Card').child(cardName)
+        if (cardObject.hasOwnProperty('text')) {
+          if (cardObject.text.includes("<b>Discover</b>")) {
+
+            ref.set(cardObject).then(() => {
+              // console.log(cardList[expansion][card].name + " url has been saved")
+            }).catch(function (error) {
+              console.log('Synchronization failed for: ' + cardName);
+            });
+          }
+        }
+        //TAUNT
+        ref = db.ref('discover pools').child('Wild').child('Taunt').child(cardName)
+        if (cardObject.hasOwnProperty('text')) {
+          if (cardObject.text.match(/(Taunt)(\\n)*/g)) {
+
+            ref.set(cardObject).then(() => {
+              // console.log(cardList[expansion][card].name + " url has been saved")
+            }).catch(function (error) {
+              console.log('Synchronization failed for: ' + cardName);
+            });
+          }
+        }
+
+
+      }
+    });
+
+  })
+
+
+
+//I want to make a function that will dig down to each of the playable card objects
+// then return that object and have a callback with the object. 
+//Grabs all the card Objects and them puts them into an array
+function getCardObjectsFromList(list, callback) {
+  var cards = [];
+  for (var expansion in list) {
+    if (list.hasOwnProperty(expansion)) {
+      if (!["Tavern Brawl", "Credits", "Missions", "System", "Debug"].includes(expansion)) {
+        //go through only the cards listed within the expansions, basic and classic
+
+        for (var card in list[expansion]) {
+          if (list[expansion].hasOwnProperty(card)) {
+            var cardObject = list[expansion][card];
+            var cardType = list[expansion][card].type;
+            var cardClass = list[expansion][card].playerClass;
+            var cardName = list[expansion][card].name.replace(/['"*!:.?|[\]\/]+/g, '');
+            var cardFaction = list[expansion][card].faction;
+
+            if (!["Hero Power", "Enchantment"].includes(cardType)) {
+              if (!(["Spell"].includes(cardType) && ["Neutral"].includes(cardClass))) {
+                cards.push(cardObject);
               }
+
             }
           }
         }
       }
-    })
-      .catch(function (error) {
-        console.error(error.message);
-      });
+    }
+  }
 
-  })
+  callback(cards);
+
+}
 
 function retrieveImage(cardObject) {
   console.log("uploading images to FB")
@@ -222,6 +350,7 @@ function retrieveImage(cardObject) {
 
 
 //Renames the unnamed card keys under each expansion to be the name of the card
+
 function renameKeys(list) {
   for (var expansion in list) {
     if (list.hasOwnProperty(expansion)) {
@@ -249,25 +378,23 @@ function renameKeys(list) {
 }
 
 
+// function saveFileToFirebase(url, name,storageRef) {
+//   var imageRef = storageRef.child('images/' + name + ".png");
+//   var xhr = new XMLHttpRequest();
+//   xhr.responseType = 'blob';
+//   xhr.onload = () => {
+//     var blob = xhr.response;
+//     imageRef.put(blob).then((snapshot) => {
+//       console.log("uploaded" + name)
+//     }).catch((error) => {
+//       console.log('Upload failed for: ' + name);
+//     })
+//   }
+//   xhr.open('GET', url);
+//   xhr.send()
+// }
 
 
 
-  // var path = './cardList.json'
 
-  // fs.open(path, 'r+', 0666, (err, fd) => {
-  //     if (err) { throw err; }
-  //     console.log("file opened");
-
-  //     //writes all the data from twitch emote list to my local emote_list.json
-  //     fs.writeFile(fd, JSON.stringify(cardList, null, 2), function (err) {
-  //         if (err) { throw err; }
-  //         // console.log(cardList.length);
-  //         console.log('file written');
-
-  //         fs.close(fd, function () {
-  //             console.log('file closed');
-  //         });
-  //     });
-  // });
-  // console.log("response has completed")
-  // // console.log(Object.keys(cardList));
+  
