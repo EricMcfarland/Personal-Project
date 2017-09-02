@@ -62,7 +62,6 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
 
     cardList = result.body
     cardList = renameKeys(cardList);
-    console.log(cardList.Basic.Archmage)
 
     var ref = db.ref();
     ref.child('cardList').remove()
@@ -179,8 +178,7 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
     })
 
 
-    //populate the discover pool
-    //then recursively populate the discover cards
+    //This function takes an Object(cardList)
     getCardObjectsFromList(cardList, (cards) => {
       for (card in cards) {
         var cardObject = cards[card];
@@ -191,7 +189,7 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
         var cardMechanics = cardObject.mechanics;
         var cardCost = cardObject.cost;
         var cardImage = cardObject.img;
-        
+
 
         //STANDARD
         if (["Classic", "Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan", "One Night in Karazhan", "Journey to Un'Goro", "Knights of the Frozen Throne"].includes(cardSet)) {
@@ -215,9 +213,6 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
               });
             }
           }
-
-
-
         }
 
 
@@ -232,21 +227,35 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
         ref.set(cardObject).then(() => {
           // console.log(cardList[expansion][card].name + " url has been saved")
         }).catch(function (error) {
-          console.log('Synchronization failed for: ' + cardName);
+          console.log('setting class cardObject '+error);
         });
 
         //DISCOVER
         ref = db.ref('discover pools').child('Wild').child('Discover Card').child(cardName)
         if (cardObject.hasOwnProperty('text')) {
-          if (cardObject.text.includes("<b>Discover</b>")) {
+          if (cardObject.text.includes("Discover</b>")) {
 
-            ref.set(cardObject).then(() => {
+            //TODO: pass the cardobject to the then()
+            ref.set(cardObject).then((snapshot) => {
+              // console.log(snapshot.val());
+              // if (cardObject.name === "Primordial Glyph") {
+              //   cardRef = db.ref('discover pools').child('Wild').child('Discover Card').child('Primordial Glyph')
+              //   poolRef = db.ref('discover pools').child('Wild').child('Class').child('Mage').child('Spell')
+              //   poolRef.on('value', (data) => {
+              //     cardRef.set({["Pool"]:data}).then(() => {
+              //       console.log("prim glyph data set")
+              //     }).catch(function (error) {
+              //       console.log('Setting pool to card ' + error);
+              //     });
+              //   })
+              // }
               // console.log(cardList[expansion][card].name + " url has been saved")
             }).catch(function (error) {
-              console.log('Synchronization failed for: ' + cardName);
+              console.log('Setting discover cardobject: ' + error);
             });
           }
         }
+
         //TAUNT
         ref = db.ref('discover pools').child('Wild').child('Taunt').child(cardName)
         if (cardObject.hasOwnProperty('text')) {
@@ -271,6 +280,10 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
 //I want to make a function that will dig down to each of the playable card objects
 // then return that object and have a callback with the object. 
 //Grabs all the card Objects and them puts them into an array
+
+//This function takes an Object \list\ with a specific structure, in this case the HSJSON file
+//And creates an array of Objects \cards\ corresponding to each card in the list
+//The callback then accepts that array of Objects \cards\ as an input to act upon
 function getCardObjectsFromList(list, callback) {
   var cards = [];
   for (var expansion in list) {
@@ -397,4 +410,4 @@ function renameKeys(list) {
 
 
 
-  
+
