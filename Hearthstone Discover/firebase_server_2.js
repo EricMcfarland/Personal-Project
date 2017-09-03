@@ -35,8 +35,27 @@ getJSON().then((list) => {
     // console.log(list)
     writeDataToFile(list, './cardListRekeyed.json')
     var cardObjects = getCardObjectsFromList(list)
-    // console.log(cardObjects)
+
+    var cnt = 0;
+    //write all cards to root/cards directory, returns message when completed
+    for (card in cardObjects) {
+        if (cardObjects.hasOwnProperty(card)) {
+            writeToFirebase(cardObjects[card], '/cards/' + card).then((obj) => {
+                cnt++
+                if (Object.keys(cardObjects).length === cnt) {
+                    console.log("all card written");
+                }
+            });
+        }
+    }
+    //TODO:
+    // var standardList = filterList(list,["Classic", "Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan", "One Night in Karazhan", "Journey to Un'Goro", "Knights of the Frozen Throne"])
+    // writeToFirebase(standardList,'/Standard/')
 })
+
+//filter list takes in an object as the first argument then n arguments afterwards. 
+//Each non object argument should an array of strings, with the first value being the filter flag
+//with the second value being the includes filter. 
 
 
 function writeDataToFile(data, path) {
@@ -71,10 +90,11 @@ function getJSON() {
     })
 }
 //This function takes an Object \list\ with a specific structure, in this case the HSJSON file
-//And creates an array of Objects \cards\ corresponding to each card in the list
-//The callback then accepts that array of Objects \cards\ as an input to act upon
+//And creates an array of Objects \cards\ corresponding to each card in the list.
+//Filters out most non-playable, non-collectible cards
+//TODO: Do I need to filter here?
 function getCardObjectsFromList(list) {
-    var cards = [];
+    var cards = {};
     for (var expansion in list) {
         if (list.hasOwnProperty(expansion)) {
             if (!["Tavern Brawl", "Credits", "Missions", "System", "Debug"].includes(expansion)) {
@@ -88,9 +108,9 @@ function getCardObjectsFromList(list) {
                         var cardName = list[expansion][card].name.replace(/['"*!:.?|[\]\/]+/g, '');
                         var cardFaction = list[expansion][card].faction;
 
-                        if (!["Hero Power", "Enchantment"].includes(cardType)) {
+                        if (!["Enchantment"].includes(cardType)) {
                             if (!(["Spell"].includes(cardType) && ["Neutral"].includes(cardClass))) {
-                                cards.push(cardObject);
+                                cards[cardName] = cardObject;
                             }
 
                         }
@@ -99,7 +119,7 @@ function getCardObjectsFromList(list) {
             }
         }
     }
-        return cards
+    return cards
 }
 //TODO: redo with unirest?
 function retrieveImage(cardObject) {
@@ -175,6 +195,20 @@ function renameKeys(list) {
     }
 
     return newList
+}
+
+//Writes object to a firebase path. The path is from the firebase root directory
+//TODO: Make this a promise?
+function writeToFirebase(obj, path) {
+    return new Promise((resolve, reject) => {
+        var ref = db.ref(path)
+        ref.set(obj).then(() => {
+            resolve(obj)
+        }).catch((err) => {
+            reject(new Error(err))
+        })
+    })
+
 }
 
 
