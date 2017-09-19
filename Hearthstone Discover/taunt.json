@@ -1,0 +1,1831 @@
+{
+  "Goldshire Footman": {
+    "cardId": "CS1_042",
+    "dbfId": "922",
+    "name": "Goldshire Footman",
+    "cardSet": "Basic",
+    "type": "Minion",
+    "faction": "Alliance",
+    "rarity": "Free",
+    "cost": 1,
+    "attack": 1,
+    "health": 2,
+    "text": "<b>Taunt</b>",
+    "flavor": "If 1/2 minions are all that is defending Goldshire, you would think it would have been overrun years ago.",
+    "artist": "Donato Giancola",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "howToGetGold": "Unlocked at Paladin Level 57.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS1_042.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS1_042_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Frostwolf Grunt": {
+    "cardId": "CS2_121",
+    "dbfId": "41",
+    "name": "Frostwolf Grunt",
+    "cardSet": "Basic",
+    "type": "Minion",
+    "faction": "Neutral",
+    "rarity": "Free",
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "text": "<b>Taunt</b>",
+    "flavor": "Grunting is what his father did and his father before that.   It's more than just a job.",
+    "artist": "Richie Marella",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "howToGetGold": "Unlocked at Shaman Level 57.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_121.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_121_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Ironfur Grizzly": {
+    "cardId": "CS2_125",
+    "dbfId": "1182",
+    "name": "Ironfur Grizzly",
+    "cardSet": "Basic",
+    "type": "Minion",
+    "faction": "Neutral",
+    "rarity": "Free",
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "text": "<b>Taunt</b>",
+    "flavor": "\"Bear Carcass 1/10\"",
+    "artist": "Lars Grant-West",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Neutral",
+    "howToGetGold": "Unlocked at Hunter Level 59.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_125.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_125_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Silverback Patriarch": {
+    "cardId": "CS2_127",
+    "dbfId": "67",
+    "name": "Silverback Patriarch",
+    "cardSet": "Basic",
+    "type": "Minion",
+    "faction": "Horde",
+    "rarity": "Free",
+    "cost": 3,
+    "attack": 1,
+    "health": 4,
+    "text": "<b>Taunt</b>",
+    "flavor": "He likes to act like he's in charge, but the silverback matriarch actually runs things.",
+    "artist": "Daren Bader",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Neutral",
+    "howToGetGold": "Unlocked at Warrior Level 53.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_127.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_127_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Senjin Shieldmasta": {
+    "cardId": "CS2_179",
+    "dbfId": "635",
+    "name": "Sen'jin Shieldmasta",
+    "cardSet": "Basic",
+    "type": "Minion",
+    "faction": "Horde",
+    "rarity": "Free",
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "text": "<b>Taunt</b>",
+    "flavor": "Sen'jin Villiage is nice, if you like trolls and dust.",
+    "artist": "Brian Despain",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "howToGetGold": "Unlocked at Rogue Level 59.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_179.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_179_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Booty Bay Bodyguard": {
+    "cardId": "CS2_187",
+    "dbfId": "1140",
+    "name": "Booty Bay Bodyguard",
+    "cardSet": "Basic",
+    "type": "Minion",
+    "faction": "Horde",
+    "rarity": "Free",
+    "cost": 5,
+    "attack": 5,
+    "health": 4,
+    "text": "<b>Taunt</b>",
+    "flavor": "You can hire him... until someone offers him enough gold to turn on you.",
+    "artist": "Matt Cavotta",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "howToGetGold": "Unlocked at Shaman Level 55.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_187.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_187_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Lord of the Arena": {
+    "cardId": "CS2_162",
+    "dbfId": "157",
+    "name": "Lord of the Arena",
+    "cardSet": "Basic",
+    "type": "Minion",
+    "faction": "Alliance",
+    "rarity": "Free",
+    "cost": 6,
+    "attack": 6,
+    "health": 5,
+    "text": "<b>Taunt</b>",
+    "flavor": "He used to be a 2100+ rated arena player, but that was years ago and nobody can get him to shut up about it.",
+    "artist": "E.M. Gist",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "howToGetGold": "Unlocked at Priest Level 59.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_162.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_162_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Shieldbearer": {
+    "cardId": "EX1_405",
+    "dbfId": "866",
+    "name": "Shieldbearer",
+    "cardSet": "Classic",
+    "type": "Minion",
+    "faction": "Neutral",
+    "rarity": "Common",
+    "cost": 1,
+    "attack": 0,
+    "health": 4,
+    "text": "<b>Taunt</b>",
+    "flavor": "Have you seen the size of the shields in this game??  This is no easy job.",
+    "artist": "Carl Critchlow",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_405.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_405_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Sunfury Protector": {
+    "cardId": "EX1_058",
+    "dbfId": "891",
+    "name": "Sunfury Protector",
+    "cardSet": "Classic",
+    "type": "Minion",
+    "faction": "Alliance",
+    "rarity": "Rare",
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "text": "<b>Battlecry:</b> Give adjacent minions <b>Taunt</b>.",
+    "flavor": "She carries a shield, but only so she can give it to someone she can stand behind.",
+    "artist": "James Ryman",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_058.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_058_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Tauren Warrior": {
+    "cardId": "EX1_390",
+    "dbfId": "45",
+    "name": "Tauren Warrior",
+    "cardSet": "Classic",
+    "type": "Minion",
+    "faction": "Neutral",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "text": "<b>Taunt</b>\\n<b>Enrage:</b> +3 Attack.",
+    "flavor": "Tauren Warrior: Champion of Mulgore, Slayer of Quilboar, Rider of Thunderbluff Elevators.",
+    "artist": "Paul Warzecha",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_390.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_390_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Enrage"
+      }
+    ]
+  },
+  "Defender of Argus": {
+    "cardId": "EX1_093",
+    "dbfId": "763",
+    "name": "Defender of Argus",
+    "cardSet": "Classic",
+    "type": "Minion",
+    "faction": "Alliance",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 2,
+    "health": 3,
+    "text": "<b>Battlecry:</b> Give adjacent minions +1/+1 and <b>Taunt</b>.",
+    "flavor": "You wouldn’t think that Argus would need this much defending.  But it does.",
+    "artist": "Alex Horley Orlandelli",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_093.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_093_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Dread Corsair": {
+    "cardId": "NEW1_022",
+    "dbfId": "878",
+    "name": "Dread Corsair",
+    "cardSet": "Classic",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "text": "<b>Taunt</b>\\nCosts (1) less per Attack of_your weapon.",
+    "flavor": "\"Yarrrr\" is a pirate word that means \"Greetings, milord.\"",
+    "artist": "Trent Kaniuga",
+    "collectible": true,
+    "race": "Pirate",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/NEW1_022.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/NEW1_022_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Mogushan Warden": {
+    "cardId": "EX1_396",
+    "dbfId": "700",
+    "name": "Mogu'shan Warden",
+    "cardSet": "Classic",
+    "type": "Minion",
+    "faction": "Neutral",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 1,
+    "health": 7,
+    "text": "<b>Taunt</b>",
+    "flavor": "All these guys ever do is talk about the Thunder King.   BOOOORRRINNG!",
+    "artist": "Cole Eastburn",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_396.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_396_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Abomination": {
+    "cardId": "EX1_097",
+    "dbfId": "440",
+    "name": "Abomination",
+    "cardSet": "Classic",
+    "type": "Minion",
+    "faction": "Neutral",
+    "rarity": "Rare",
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "text": "<b>Taunt</b>. <b>Deathrattle:</b> Deal 2\\ndamage to ALL characters.",
+    "flavor": "Abominations enjoy Fresh Meat and long walks on the beach.",
+    "artist": "Alex Horley Orlandelli",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_097.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_097_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Deathrattle"
+      }
+    ]
+  },
+  "Fen Creeper": {
+    "cardId": "CS1_069",
+    "dbfId": "602",
+    "name": "Fen Creeper",
+    "cardSet": "Classic",
+    "type": "Minion",
+    "faction": "Alliance",
+    "rarity": "Common",
+    "cost": 5,
+    "attack": 3,
+    "health": 6,
+    "text": "<b>Taunt</b>",
+    "flavor": "He used to be called Bog Beast, but it confused people because he wasn't an actual beast.   Boom, New Name!",
+    "artist": "Monica Langlois",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS1_069.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS1_069_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Hogger": {
+    "cardId": "NEW1_040",
+    "dbfId": "640",
+    "name": "Hogger",
+    "cardSet": "Classic",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 6,
+    "attack": 4,
+    "health": 4,
+    "text": "At the end of your turn, summon a 2/2 Gnoll with_<b>Taunt</b>.",
+    "flavor": "Hogger is super powerful. If you kill him, it's because he <i>let</i> you.",
+    "artist": "Laurel D. Austin",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/NEW1_040.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/NEW1_040_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Sunwalker": {
+    "cardId": "EX1_032",
+    "dbfId": "759",
+    "name": "Sunwalker",
+    "cardSet": "Classic",
+    "type": "Minion",
+    "faction": "Alliance",
+    "rarity": "Rare",
+    "cost": 6,
+    "attack": 4,
+    "health": 5,
+    "text": "<b>Taunt</b>\\n<b>Divine Shield</b>",
+    "flavor": "She doesn’t ACTUALLY walk on the Sun.  It's just a name.  Don’t worry!",
+    "artist": "Andrea Uderzo",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_032.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_032_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Divine Shield"
+      }
+    ]
+  },
+  "The Black Knight": {
+    "cardId": "EX1_002",
+    "dbfId": "1656",
+    "name": "The Black Knight",
+    "cardSet": "Classic",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 6,
+    "attack": 4,
+    "health": 5,
+    "text": "<b>Battlecry:</b> Destroy an enemy minion with <b>Taunt</b>.",
+    "flavor": "He was sent by the Lich King to disrupt the Argent Tournament.   We can pretty much mark that a failure.",
+    "artist": "Alex Horley Orlandelli",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_002.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_002_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Unstable Ghoul": {
+    "cardId": "FP1_024",
+    "dbfId": "1808",
+    "name": "Unstable Ghoul",
+    "cardSet": "Naxxramas",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 1,
+    "health": 3,
+    "text": "<b>Taunt</b>. <b>Deathrattle:</b> Deal 1 damage to all minions.",
+    "flavor": "Filling your Ghouls with Rocket Fuel is all the rage at Necromancer school.",
+    "artist": "Mike Nicholson",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "howToGet": "Unlocked in The Plague Quarter, in the Naxxramas adventure.",
+    "howToGetGold": "Crafting unlocked in The Plague Quarter, in the Naxxramas adventure.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/FP1_024.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/FP1_024_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Deathrattle"
+      }
+    ]
+  },
+  "Sludge Belcher": {
+    "cardId": "FP1_012",
+    "dbfId": "1793",
+    "name": "Sludge Belcher",
+    "cardSet": "Naxxramas",
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "text": "<b>Taunt\\nDeathrattle:</b> Summon a 1/2 Slime with <b>Taunt</b>.",
+    "flavor": "DO NOT GIVE HIM A ROOT BEER.",
+    "artist": "Nate Bowden",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "howToGet": "Unlocked in The Plague Quarter, in the Naxxramas adventure.",
+    "howToGetGold": "Crafting unlocked in The Plague Quarter, in the Naxxramas adventure.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/FP1_012.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/FP1_012_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Deathrattle"
+      }
+    ]
+  },
+  "Target Dummy": {
+    "cardId": "GVG_093",
+    "dbfId": "2061",
+    "name": "Target Dummy",
+    "cardSet": "Goblins vs Gnomes",
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 0,
+    "attack": 0,
+    "health": 2,
+    "text": "<b>Taunt</b>",
+    "flavor": "The engineering equivalent of a \"Kick Me\" sticker.",
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "race": "Mech",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/GVG_093.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/GVG_093_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Annoy-o-Tron": {
+    "cardId": "GVG_085",
+    "dbfId": "2053",
+    "name": "Annoy-o-Tron",
+    "cardSet": "Goblins vs Gnomes",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 1,
+    "health": 2,
+    "text": "<b>Taunt</b>\\n<b>Divine Shield</b>",
+    "flavor": "The inventor of the Annoy-o-Tron was immediately expelled from Tinkerschool, Tinkertown, and was eventually exiled from the Eastern Kingdoms altogether.",
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "race": "Mech",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/GVG_085.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/GVG_085_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Divine Shield"
+      }
+    ]
+  },
+  "Gnomeregan Infantry": {
+    "cardId": "GVG_098",
+    "dbfId": "2066",
+    "name": "Gnomeregan Infantry",
+    "cardSet": "Goblins vs Gnomes",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 1,
+    "health": 4,
+    "text": "<b>Charge</b>\\n<b>Taunt</b>",
+    "flavor": "The gnomes are valiant and ready to return to their irradiated, poorly ventilated homeland!",
+    "artist": "Zoltan & Gabor",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/GVG_098.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/GVG_098_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Charge"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Lil Exorcist": {
+    "cardId": "GVG_097",
+    "dbfId": "2065",
+    "name": "Lil' Exorcist",
+    "cardSet": "Goblins vs Gnomes",
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "text": "<b>Taunt</b>\\n<b>Battlecry:</b> Gain +1/+1 for each enemy <b>Deathrattle</b> minion.",
+    "flavor": "Warlocks have the town exorcist on speed dial in case they unleash the wrong demon.",
+    "artist": "Jim Nelson",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/GVG_097.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/GVG_097_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Deathrattle"
+      },
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Arcane Nullifier X-21": {
+    "cardId": "GVG_091",
+    "dbfId": "2059",
+    "name": "Arcane Nullifier X-21",
+    "cardSet": "Goblins vs Gnomes",
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "text": "<b>Taunt</b>\\nCan't be targeted by spells or Hero Powers.",
+    "flavor": "There was some hard talk between gnome magi and engineers about inventing this mech.",
+    "artist": "Zero Yue",
+    "collectible": true,
+    "race": "Mech",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/GVG_091.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/GVG_091_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Enhance-o Mechano": {
+    "cardId": "GVG_107",
+    "dbfId": "2075",
+    "name": "Enhance-o Mechano",
+    "cardSet": "Goblins vs Gnomes",
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 4,
+    "attack": 3,
+    "health": 2,
+    "text": "<b>Battlecry:</b> Give your other minions <b>Windfury</b>, <b>Taunt</b>, or <b>Divine Shield</b>\\n<i>(at random)</i>.",
+    "flavor": "His enhancements are gluten free!",
+    "artist": "Zoltan Boros",
+    "collectible": true,
+    "race": "Mech",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/GVG_107.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/GVG_107_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Windfury"
+      },
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Divine Shield"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Tournament Attendee": {
+    "cardId": "AT_097",
+    "dbfId": "2499",
+    "name": "Tournament Attendee",
+    "cardSet": "The Grand Tournament",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "text": "<b>Taunt</b>",
+    "flavor": "He was so excited to get season tickets to this year's Grand Tournament.  He normally doesn't get them at first and has to buy them from Ogre scalpers.",
+    "artist": "Adam Byrne",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/AT_097.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/AT_097_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Evil Heckler": {
+    "cardId": "AT_114",
+    "dbfId": "2752",
+    "name": "Evil Heckler",
+    "cardSet": "The Grand Tournament",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 5,
+    "health": 4,
+    "text": "<b>Taunt</b>",
+    "flavor": "To be honest, heckling is not the most effective form of evil.",
+    "artist": "Dan Scott",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/AT_114.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/AT_114_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Twilight Guardian": {
+    "cardId": "AT_017",
+    "dbfId": "2569",
+    "name": "Twilight Guardian",
+    "cardSet": "The Grand Tournament",
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 4,
+    "attack": 2,
+    "health": 6,
+    "text": "<b>Battlecry:</b> If you're holding a Dragon, gain +1 Attack and <b>Taunt</b>.",
+    "flavor": "A result of magical experiments carried out by the Black Dragonflight, it's not his fault that he's a vicious killer.",
+    "artist": "Slawomir Maniak",
+    "collectible": true,
+    "race": "Dragon",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/AT_017.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/AT_017_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Master Jouster": {
+    "cardId": "AT_112",
+    "dbfId": "2507",
+    "name": "Master Jouster",
+    "cardSet": "The Grand Tournament",
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 6,
+    "attack": 5,
+    "health": 6,
+    "text": "<b>Battlecry:</b> Reveal a minion in each deck. If yours costs more, gain <b>Taunt</b> and <b>Divine Shield</b>.",
+    "flavor": "Needs just a few more ratings points to become Grandmaster Jouster.",
+    "artist": "Penny Arcade",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/AT_112.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/AT_112_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Divine Shield"
+      },
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Chillmaw": {
+    "cardId": "AT_123",
+    "dbfId": "2682",
+    "name": "Chillmaw",
+    "cardSet": "The Grand Tournament",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 7,
+    "attack": 6,
+    "health": 6,
+    "text": "[x]<b>Taunt</b>\\n<b>Deathrattle:</b> If you're holding\\na Dragon, deal 3 damage\\nto all minions.",
+    "flavor": "Chillmaw keeps trying to ruin the Grand Tournament, and she would've done it too, if it weren't for those dang kids!",
+    "artist": "Raymond Swanland",
+    "collectible": true,
+    "elite": true,
+    "race": "Dragon",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/AT_123.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/AT_123_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Deathrattle"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Fossilized Devilsaur": {
+    "cardId": "LOE_073",
+    "dbfId": "2945",
+    "name": "Fossilized Devilsaur",
+    "cardSet": "The League of Explorers",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 8,
+    "attack": 8,
+    "health": 8,
+    "text": "<b>Battlecry:</b> If you control a Beast, gain <b>Taunt</b>.",
+    "flavor": "This was the only job he could get after the dinosaur theme park debacle.",
+    "artist": "Trent Kaniuga",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "howToGet": "Unlocked in the Hall of Explorers, in the League of Explorers adventure.",
+    "howToGetGold": "Crafting unlocked in the Hall of Explorers, in the League of Explorers adventure.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/LOE_073.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/LOE_073_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Bilefin Tidehunter": {
+    "cardId": "OG_156",
+    "dbfId": "38538",
+    "name": "Bilefin Tidehunter",
+    "cardSet": "Whispers of the Old Gods",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 2,
+    "health": 1,
+    "text": "<b>Battlecry:</b> Summon a 1/1 Ooze with <b>Taunt</b>.",
+    "flavor": "Bile actually makes for surprisingly sturdy fins.",
+    "artist": "James Ryman",
+    "collectible": true,
+    "race": "Murloc",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/OG_156.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/OG_156_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Twilight Geomancer": {
+    "cardId": "OG_284",
+    "dbfId": "38864",
+    "name": "Twilight Geomancer",
+    "cardSet": "Whispers of the Old Gods",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 1,
+    "health": 4,
+    "text": "[x]<b>Taunt</b>\\n<b>Battlecry:</b> Give your C'Thun\\n<b>Taunt</b> <i>(wherever it is).</i>",
+    "flavor": "\"Ok C'Thun, repeat after me: 'Your mother was a hamster.'\"",
+    "artist": "Eric Braddock",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/OG_284.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/OG_284_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Squirming Tentacle": {
+    "cardId": "OG_327",
+    "dbfId": "39003",
+    "name": "Squirming Tentacle",
+    "cardSet": "Whispers of the Old Gods",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "text": "<b>Taunt</b>",
+    "flavor": "Yeah, I think we can agree that killing the squirming tentacle first is a good idea.",
+    "artist": "L. Lullabi & Nutchapol ",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/OG_327.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/OG_327_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Cyclopian Horror": {
+    "cardId": "OG_337",
+    "dbfId": "39041",
+    "name": "Cyclopian Horror",
+    "cardSet": "Whispers of the Old Gods",
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "text": "<b>Taunt</b>. <b>Battlecry:</b> Gain      +1 Health for each enemy minion.",
+    "flavor": "What are the qualifications for being a 'Horror?'  Just how horrible do you have to be?",
+    "artist": "Garrett Hanna",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/OG_337.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/OG_337_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Faceless Shambler": {
+    "cardId": "OG_174",
+    "dbfId": "38569",
+    "name": "Faceless Shambler",
+    "cardSet": "Whispers of the Old Gods",
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 4,
+    "attack": 1,
+    "health": 1,
+    "text": "<b>Taunt</b>\\n<b>Battlecry:</b> Copy a friendly minion's Attack and Health.",
+    "flavor": "\"What is that thing?!\" \"I'm not sure, but it seems to be sort of Ysera shaped.\"",
+    "artist": "Alex Alexandrov",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/OG_174.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/OG_174_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Infested Tauren": {
+    "cardId": "OG_249",
+    "dbfId": "38784",
+    "name": "Infested Tauren",
+    "cardSet": "Whispers of the Old Gods",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 2,
+    "health": 3,
+    "text": "<b>Taunt</b>\\n<b>Deathrattle:</b> Summon a 2/2 Slime.",
+    "flavor": "The Overmind and the Old Gods are surprisingly similar.",
+    "artist": "Paul Mafayon",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/OG_249.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/OG_249_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Deathrattle"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Psych-o-Tron": {
+    "cardId": "OG_145",
+    "dbfId": "38526",
+    "name": "Psych-o-Tron",
+    "cardSet": "Whispers of the Old Gods",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 5,
+    "attack": 3,
+    "health": 4,
+    "text": "<b>Taunt</b>\\n<b>Divine Shield</b>",
+    "flavor": "\"Annoyinger-o-Tron\" was just too unwieldy. And accurate.",
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "race": "Mech",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/OG_145.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/OG_145_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Divine Shield"
+      }
+    ]
+  },
+  "Bog Creeper": {
+    "cardId": "OG_153",
+    "dbfId": "38534",
+    "name": "Bog Creeper",
+    "cardSet": "Whispers of the Old Gods",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 7,
+    "attack": 6,
+    "health": 8,
+    "text": "<b>Taunt</b>",
+    "flavor": "He's tried other things, but bog sidling, bog ambling, and bog trundling just aren't as effective as bog creeping.",
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/OG_153.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/OG_153_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Hogger, Doom of Elwynn": {
+    "cardId": "OG_318",
+    "dbfId": "38944",
+    "name": "Hogger, Doom of Elwynn",
+    "cardSet": "Whispers of the Old Gods",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 7,
+    "attack": 6,
+    "health": 6,
+    "text": "Whenever this minion takes damage, summon a 2/2 Gnoll with <b>Taunt</b>.",
+    "flavor": "When C'thun went to sleep, he checked under his bed for Hogger.",
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/OG_318.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/OG_318_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Twin Emperor Veklor": {
+    "cardId": "OG_131",
+    "dbfId": "38488",
+    "name": "Twin Emperor Vek'lor",
+    "cardSet": "Whispers of the Old Gods",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 7,
+    "attack": 4,
+    "health": 6,
+    "text": "[x]<b><b>Taunt</b>\\nBattlecry:</b> If your C'Thun has\\nat least 10 Attack, summon\\nanother Emperor.",
+    "flavor": "Do they make decisions based on age? \"I'm two minutes older therefore we burn this village.\"",
+    "artist": "Mike Sass",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/OG_131.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/OG_131_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Soggoth the Slitherer": {
+    "cardId": "OG_340",
+    "dbfId": "39119",
+    "name": "Soggoth the Slitherer",
+    "cardSet": "Whispers of the Old Gods",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 9,
+    "attack": 5,
+    "health": 9,
+    "text": "<b>Taunt</b>\\nCan't be targeted by spells or Hero Powers.",
+    "flavor": "Don't tell Soggoth, but in the future he gets totally owned by the Master's Glaive and his skull becomes a tourist attraction.",
+    "artist": "James Ryman",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/OG_340.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/OG_340_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Pompous Thespian": {
+    "cardId": "KAR_011",
+    "dbfId": "39476",
+    "name": "Pompous Thespian",
+    "cardSet": "One Night in Karazhan",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "text": "<b>Taunt</b>",
+    "flavor": "Alas poor Annoy-o-Tron! A fellow of infinite jest, of most excellent fancy!",
+    "artist": "Matt Dixon",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "howToGet": "Unlocked in the Opera, in One Night in Karazhan.",
+    "howToGetGold": "Crafting unlocked in the Opera, in One Night in Karazhan.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/KAR_011.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/KAR_011_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Arcanosmith": {
+    "cardId": "KAR_710",
+    "dbfId": "39491",
+    "name": "Arcanosmith",
+    "cardSet": "One Night in Karazhan",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 3,
+    "health": 2,
+    "text": "<b>Battlecry:</b> Summon a 0/5 minion with <b>Taunt</b>.",
+    "flavor": "He’s really just a Blacksmith, but he thought the fancy title would bring in more business.",
+    "artist": "Anton Zemskov",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "howToGet": "Unlocked in the Parlor, in One Night in Karazhan.",
+    "howToGetGold": "Crafting unlocked in the Parlor, in One Night in Karazhan.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/KAR_710.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/KAR_710_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Avian Watcher": {
+    "cardId": "KAR_037",
+    "dbfId": "39489",
+    "name": "Avian Watcher",
+    "cardSet": "One Night in Karazhan",
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 5,
+    "attack": 3,
+    "health": 6,
+    "text": "<b>Battlecry:</b> If you control a <b>Secret</b>, gain +1/+1\\nand <b>Taunt</b>.",
+    "flavor": "He mostly watches light romantic comedies.",
+    "artist": "Jim Nelson",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "howToGet": "Unlocked in the Menagerie, in One Night in Karazhan.",
+    "howToGetGold": "Crafting unlocked in the Menagerie, in One Night in Karazhan.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/KAR_037.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/KAR_037_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Secret"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "The Curator": {
+    "cardId": "KAR_061",
+    "dbfId": "39225",
+    "name": "The Curator",
+    "cardSet": "One Night in Karazhan",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 7,
+    "attack": 4,
+    "health": 6,
+    "text": "<b>Taunt</b>\\n<b>Battlecry:</b> Draw a Beast, Dragon, and Murloc from your deck.",
+    "flavor": "The Curator guards Azeroth’s deadliest creatures, but it’s secretly terrified of squirrels.",
+    "artist": "Wei Wang",
+    "collectible": true,
+    "elite": true,
+    "race": "Mech",
+    "playerClass": "Neutral",
+    "howToGet": "Unlocked in the Menagerie, in One Night in Karazhan.",
+    "howToGetGold": "Crafting unlocked in the Menagerie, in One Night in Karazhan.",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/KAR_061.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/KAR_061_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Dirty Rat": {
+    "cardId": "CFM_790",
+    "dbfId": "41567",
+    "name": "Dirty Rat",
+    "cardSet": "Mean Streets of Gadgetzan",
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 2,
+    "attack": 2,
+    "health": 6,
+    "text": "[x]<b>Taunt</b>\\n<b>Battlecry:</b> Your opponent\\nsummons a random minion\\nfrom their hand.",
+    "flavor": "It's not his fault…  Someone keeps stealing his soap!",
+    "artist": "Dany Orizio",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CFM_790.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CFM_790_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Hired Gun": {
+    "cardId": "CFM_653",
+    "dbfId": "40911",
+    "name": "Hired Gun",
+    "cardSet": "Mean Streets of Gadgetzan",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 4,
+    "health": 3,
+    "text": "<b>Taunt</b>",
+    "flavor": "He loves his job and would do it for free!  (But don't tell his boss!)",
+    "artist": "Eric Braddock",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CFM_653.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CFM_653_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Second-Rate Bruiser": {
+    "cardId": "CFM_652",
+    "dbfId": "40906",
+    "name": "Second-Rate Bruiser",
+    "cardSet": "Mean Streets of Gadgetzan",
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "text": "[x]<b>Taunt</b>\\nCosts (2) less if your\\nopponent has at least\\nthree minions.",
+    "flavor": "He'll be a first-rate bruiser once he gets used to his contacts.",
+    "artist": "Trent Kaniuga",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CFM_652.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CFM_652_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Spiked Hogrider": {
+    "cardId": "CFM_688",
+    "dbfId": "40700",
+    "name": "Spiked Hogrider",
+    "cardSet": "Mean Streets of Gadgetzan",
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "text": "<b>Battlecry:</b> If an enemy minion has <b>Taunt</b>, gain_<b>Charge</b>.",
+    "flavor": "Did you know the Hogchoppers compete every year at the Mirage Raceway?  They do.  It's a real group.",
+    "artist": "Mike Sass",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CFM_688.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CFM_688_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Charge"
+      },
+      {
+        "name": "Battlecry"
+      }
+    ]
+  },
+  "Ancient of Blossoms": {
+    "cardId": "CFM_854",
+    "dbfId": "40744",
+    "name": "Ancient of Blossoms",
+    "cardSet": "Mean Streets of Gadgetzan",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 6,
+    "attack": 3,
+    "health": 8,
+    "text": "<b>Taunt</b>",
+    "flavor": "His new shampoo is really working!",
+    "artist": "Arthur Gimaldinov",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CFM_854.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CFM_854_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Wrathion": {
+    "cardId": "CFM_806",
+    "dbfId": "40603",
+    "name": "Wrathion",
+    "cardSet": "Mean Streets of Gadgetzan",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 6,
+    "attack": 4,
+    "health": 5,
+    "text": "<b>Taunt</b>. <b>Battlecry:</b> Draw cards until you draw one that isn't a Dragon.",
+    "flavor": "Wrathion, son of Deathwing, is a dragon.  Why isn't he tagged as a dragon, you ask?  WHAT, ARE YOU TRYING TO BLOW HIS COVER??",
+    "artist": "James Ryman",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CFM_806.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CFM_806_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Stubborn Gastropod": {
+    "cardId": "UNG_808",
+    "dbfId": "41318",
+    "name": "Stubborn Gastropod",
+    "cardSet": "Journey to Un'Goro",
+    "type": "Minion",
+    "faction": "Neutral",
+    "rarity": "Common",
+    "cost": 2,
+    "attack": 1,
+    "health": 2,
+    "text": "<b>Taunt</b>\\n  <b>Poisonous</b>",
+    "flavor": "Stubbornly pursuing its dream to become Azeroth's fastest animal!",
+    "artist": "Aaron Miller",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/UNG_808.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/UNG_808_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Poisonous"
+      }
+    ]
+  },
+  "Stonehill Defender": {
+    "cardId": "UNG_072",
+    "dbfId": "41243",
+    "name": "Stonehill Defender",
+    "cardSet": "Journey to Un'Goro",
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 3,
+    "attack": 1,
+    "health": 4,
+    "text": "<b>Taunt</b>\\n<b>Battlecry:</b> <b>Discover</b> a <b>Taunt</b>_minion.",
+    "flavor": "Briefly tried stand-up comedy under the name \"Stonehill Offender\", but turtles are just too thin-skinned.",
+    "artist": "Mark Gibbons",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/UNG_072.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/UNG_072_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Discover"
+      }
+    ]
+  },
+  "Tar Creeper": {
+    "cardId": "UNG_928",
+    "dbfId": "41418",
+    "name": "Tar Creeper",
+    "cardSet": "Journey to Un'Goro",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 3,
+    "attack": 1,
+    "health": 5,
+    "text": "<b>Taunt</b>\\nHas +2 Attack during your opponent's turn.",
+    "flavor": "If you won't come to the tar pits, we'll bring them to you!",
+    "artist": "Jim Nelson",
+    "collectible": true,
+    "race": "Elemental",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/UNG_928.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/UNG_928_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Stegodon": {
+    "cardId": "UNG_810",
+    "dbfId": "41324",
+    "name": "Stegodon",
+    "cardSet": "Journey to Un'Goro",
+    "type": "Minion",
+    "faction": "Neutral",
+    "rarity": "Common",
+    "cost": 4,
+    "attack": 2,
+    "health": 6,
+    "text": "<b>Taunt</b>",
+    "flavor": "Level 40 Tortollan Paladins quest to tame a Stegodon.  There are no level 41 Tortollan Paladins.",
+    "artist": "Jim Nelson",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/UNG_810.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/UNG_810_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Tolvir Stoneshaper": {
+    "cardId": "UNG_070",
+    "dbfId": "41241",
+    "name": "Tol'vir Stoneshaper",
+    "cardSet": "Journey to Un'Goro",
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "text": "[x]<b>Battlecry:</b> If you played an\\nElemental last turn, gain\\n_<b>Taunt</b> and <b>Divine_Shield</b>.",
+    "flavor": "He spends a lot of time keeping himself in stoneshape.",
+    "artist": "Mike Azevedo",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/UNG_070.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/UNG_070_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Divine Shield"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Nesting Roc": {
+    "cardId": "UNG_801",
+    "dbfId": "41305",
+    "name": "Nesting Roc",
+    "cardSet": "Journey to Un'Goro",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 5,
+    "attack": 4,
+    "health": 7,
+    "text": "<b>Battlecry:</b> If you control at_least 2 other minions, gain <b>Taunt</b>.",
+    "flavor": "Roc eggs are great in omelettes, sandwiches, and as bait to turn poachers into bird food.",
+    "artist": "Paul Mafayon",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/UNG_801.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/UNG_801_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Primordial Drake": {
+    "cardId": "UNG_848",
+    "dbfId": "41929",
+    "name": "Primordial Drake",
+    "cardSet": "Journey to Un'Goro",
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 8,
+    "attack": 4,
+    "health": 8,
+    "text": "[x]<b>Taunt</b>\\n<b>Battlecry:</b> Deal 2 damage\\nto all other minions.",
+    "flavor": "Before he became a rap artist.",
+    "artist": "Mike Sass",
+    "collectible": true,
+    "race": "Dragon",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/UNG_848.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/UNG_848_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Giant Mastodon": {
+    "cardId": "UNG_071",
+    "dbfId": "41242",
+    "name": "Giant Mastodon",
+    "cardSet": "Journey to Un'Goro",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 9,
+    "attack": 6,
+    "health": 10,
+    "text": "<b>Taunt</b>",
+    "flavor": "Still salty about it not being the \"Year of the Mastodon.\"",
+    "artist": "Chanchai Luechaiwattanasopon",
+    "collectible": true,
+    "race": "Beast",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/UNG_071.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/UNG_071_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Ozruk": {
+    "cardId": "UNG_907",
+    "dbfId": "41294",
+    "name": "Ozruk",
+    "cardSet": "Journey to Un'Goro",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 9,
+    "attack": 5,
+    "health": 5,
+    "text": "[x]<b>Taunt</b>\\n<b>Battlecry:</b> Gain +5 Health\\nfor each Elemental you\\nplayed last turn.",
+    "flavor": "Between you and me, Ozruk is a bit obsessed with his body.",
+    "artist": "Tooth",
+    "collectible": true,
+    "elite": true,
+    "race": "Elemental",
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/UNG_907.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/UNG_907_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "The Lich King": {
+    "cardId": "ICC_314",
+    "dbfId": "42818",
+    "name": "The Lich King",
+    "cardSet": "Knights of the Frozen Throne",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 8,
+    "attack": 8,
+    "health": 8,
+    "text": "[x]<b>Taunt</b>\\nAt the end of your turn,\\nadd a random <b>Death Knight</b>\\ncard to your hand.",
+    "flavor": "\"All that I am: anger, cruelty, vengeance, 8 attack - I bestow upon you, my chosen knight.\"",
+    "artist": "Glenn Rane",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/ICC_314.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/ICC_314_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Corpsetaker": {
+    "cardId": "ICC_912",
+    "dbfId": "46102",
+    "name": "Corpsetaker",
+    "cardSet": "Knights of the Frozen Throne",
+    "type": "Minion",
+    "rarity": "Epic",
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "text": "[x]<b>Battlecry:</b> Gain <b>Taunt</b> if your\\ndeck has a <b>Taunt</b> minion.\\nRepeat for <b>Divine Shield</b>,\\n<b>Lifesteal</b>, <b>Windfury</b>.",
+    "flavor": "Her extensive collection of corpses includes one of nearly every type.  She'd love for you to join it.",
+    "artist": "James Ryman",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/ICC_912.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/ICC_912_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      },
+      {
+        "name": "Divine Shield"
+      },
+      {
+        "name": "Lifesteal"
+      },
+      {
+        "name": "Windfury"
+      }
+    ]
+  },
+  "Prince Valanar": {
+    "cardId": "ICC_853",
+    "dbfId": "45342",
+    "name": "Prince Valanar",
+    "cardSet": "Knights of the Frozen Throne",
+    "type": "Minion",
+    "rarity": "Legendary",
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "text": "<b>Battlecry:</b> If your deck has no 4-Cost cards, gain <b>Lifesteal</b> and <b>Taunt</b>.",
+    "flavor": "Three Princes stand before you. This one devours one after another.",
+    "artist": "Arthur Bozonnet",
+    "collectible": true,
+    "elite": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/ICC_853.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/ICC_853_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Lifesteal"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Saronite Chain Gang": {
+    "cardId": "ICC_466",
+    "dbfId": "42395",
+    "name": "Saronite Chain Gang",
+    "cardSet": "Knights of the Frozen Throne",
+    "type": "Minion",
+    "rarity": "Rare",
+    "cost": 4,
+    "attack": 2,
+    "health": 3,
+    "text": "<b>Taunt</b>\\n<b>Battlecry:</b> Summon a copy of this minion.",
+    "flavor": "Desperately needs some alone time.",
+    "artist": "Daren Bader",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/ICC_466.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/ICC_466_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  },
+  "Bonemare": {
+    "cardId": "ICC_705",
+    "dbfId": "42790",
+    "name": "Bonemare",
+    "cardSet": "Knights of the Frozen Throne",
+    "type": "Minion",
+    "rarity": "Common",
+    "cost": 7,
+    "attack": 5,
+    "health": 5,
+    "text": "<b>Battlecry:</b> Give a friendly minion +4/+4 and <b>Taunt</b>.",
+    "flavor": "Attacks her job with unbridled enthusiasm.",
+    "artist": "Ralph Horsely",
+    "collectible": true,
+    "playerClass": "Neutral",
+    "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/ICC_705.png",
+    "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/ICC_705_premium.gif",
+    "locale": "enUS",
+    "mechanics": [
+      {
+        "name": "Battlecry"
+      },
+      {
+        "name": "Taunt"
+      }
+    ]
+  }
+}

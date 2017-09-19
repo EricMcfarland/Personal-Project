@@ -802,7 +802,7 @@
       "faction": "Neutral",
       "rarity": "Free",
       "cost": 0,
-      "text": "Gain 2 Mana Crystals this turn only.",
+      "text": "Gain 1 Mana Crystal this turn only.",
       "flavor": "Some druids still have flashbacks from strangers yelling \"Innervate me!!\" at them.",
       "artist": "Doug Alexander",
       "collectible": true,
@@ -1718,27 +1718,6 @@
       "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_108_premium.gif",
       "locale": "enUS"
     },
-    "Fiery War Axe": {
-      "cardId": "CS2_106",
-      "dbfId": "401",
-      "name": "Fiery War Axe",
-      "cardSet": "Basic",
-      "type": "Weapon",
-      "faction": "Neutral",
-      "rarity": "Free",
-      "cost": 2,
-      "attack": 3,
-      "durability": 2,
-      "flavor": "During times of tranquility and harmony, this weapon was called by its less popular name, Chilly Peace Axe.",
-      "artist": "Lucas Graciano",
-      "collectible": true,
-      "playerClass": "Warrior",
-      "howToGet": "Unlocked at Level 1.",
-      "howToGetGold": "Unlocked at Level 49.",
-      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_106.png",
-      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_106_premium.gif",
-      "locale": "enUS"
-    },
     "Fireblast": {
       "cardId": "CS2_034",
       "dbfId": "807",
@@ -2316,6 +2295,27 @@
       "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_129_premium.gif",
       "locale": "enUS"
     },
+    "Fiery War Axe": {
+      "cardId": "CS2_106",
+      "dbfId": "401",
+      "name": "Fiery War Axe",
+      "cardSet": "Basic",
+      "type": "Weapon",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 3,
+      "attack": 3,
+      "durability": 2,
+      "flavor": "During times of tranquility and harmony, this weapon was called by its less popular name, Chilly Peace Axe.",
+      "artist": "Lucas Graciano",
+      "collectible": true,
+      "playerClass": "Warrior",
+      "howToGet": "Unlocked at Level 1.",
+      "howToGetGold": "Unlocked at Level 49.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_106.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_106_premium.gif",
+      "locale": "enUS"
+    },
     "Frost Nova": {
       "cardId": "CS2_026",
       "dbfId": "587",
@@ -2360,31 +2360,6 @@
       "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_007.png",
       "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_007_premium.gif",
       "locale": "enUS"
-    },
-    "Hex": {
-      "cardId": "EX1_246",
-      "dbfId": "766",
-      "name": "Hex",
-      "cardSet": "Basic",
-      "type": "Spell",
-      "faction": "Neutral",
-      "rarity": "Free",
-      "cost": 3,
-      "text": "Transform a minion into a 0/1 Frog with <b>Taunt</b>.",
-      "flavor": "If you Hex a Murloc... it really isn't much of a change, is it?",
-      "artist": "Steve Hui",
-      "collectible": true,
-      "playerClass": "Shaman",
-      "howToGet": "Unlocked at Level 1.",
-      "howToGetGold": "Unlocked at Level 47.",
-      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_246.png",
-      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_246_premium.gif",
-      "locale": "enUS",
-      "mechanics": [
-        {
-          "name": "Taunt"
-        }
-      ]
     },
     "Huffer": {
       "cardId": "NEW1_034",
@@ -2910,6 +2885,31 @@
       "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_062.png",
       "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_062_premium.gif",
       "locale": "enUS"
+    },
+    "Hex": {
+      "cardId": "EX1_246",
+      "dbfId": "766",
+      "name": "Hex",
+      "cardSet": "Basic",
+      "type": "Spell",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 4,
+      "text": "Transform a minion into a 0/1 Frog with <b>Taunt</b>.",
+      "flavor": "If you Hex a Murloc... it really isn't much of a change, is it?",
+      "artist": "Steve Hui",
+      "collectible": true,
+      "playerClass": "Shaman",
+      "howToGet": "Unlocked at Level 1.",
+      "howToGetGold": "Unlocked at Level 47.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_246.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_246_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Taunt"
+        }
+      ]
     },
     "Houndmaster": {
       "cardId": "DS1_070",
@@ -4453,7 +4453,7 @@
       "name": "Mrgglaargl!",
       "cardSet": "Classic",
       "type": "Enchantment",
-      "text": "+2/+1 from Murloc Warleader.",
+      "text": "+2 Attack from Murloc Warleader.",
       "playerClass": "Neutral",
       "locale": "enUS"
     },
@@ -7044,24 +7044,20 @@
       ]
     },
     "Treant": {
-      "cardId": "EX1_573t",
-      "dbfId": "678",
+      "cardId": "EX1_tk9",
+      "dbfId": "358",
       "name": "Treant",
       "cardSet": "Classic",
       "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Common",
       "cost": 2,
       "attack": 2,
       "health": 2,
-      "text": "<b>Taunt</b>",
       "playerClass": "Druid",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_573t.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/EX1_573t_premium.gif",
-      "locale": "enUS",
-      "mechanics": [
-        {
-          "name": "Taunt"
-        }
-      ]
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_tk9.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/EX1_tk9_premium.gif",
+      "locale": "enUS"
     },
     "Wild Pyromancer": {
       "cardId": "NEW1_020",
@@ -7962,7 +7958,7 @@
       "cost": 3,
       "attack": 3,
       "health": 3,
-      "text": "Your other Murlocs have +2/+1.",
+      "text": "Your other Murlocs have +2 Attack.",
       "flavor": "Do Murlocs ever get tired of making the same old sound?  Nope!  Mrglglrglglglglglglgl!",
       "artist": "Tim McBurnie",
       "collectible": true,
@@ -11175,15 +11171,15 @@
       "locale": "enUS"
     },
     "Gluth": {
-      "cardId": "NAX12_01",
-      "dbfId": "1827",
+      "cardId": "NAX12_01H",
+      "dbfId": "2140",
       "name": "Gluth",
       "cardSet": "Naxxramas",
       "type": "Hero",
-      "health": 30,
+      "health": 45,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX12_01.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX12_01_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX12_01H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX12_01H_premium.gif",
       "locale": "enUS"
     },
     "Gothik the Harvester": {
@@ -11211,15 +11207,15 @@
       "locale": "enUS"
     },
     "Grobbulus": {
-      "cardId": "NAX11_01",
-      "dbfId": "1826",
+      "cardId": "NAX11_01H",
+      "dbfId": "2134",
       "name": "Grobbulus",
       "cardSet": "Naxxramas",
       "type": "Hero",
-      "health": 30,
+      "health": 45,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX11_01.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX11_01_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX11_01H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX11_01H_premium.gif",
       "locale": "enUS"
     },
     "Heigan the Unclean": {
@@ -11235,15 +11231,15 @@
       "locale": "enUS"
     },
     "Instructor Razuvious": {
-      "cardId": "NAX7_01",
-      "dbfId": "1822",
+      "cardId": "NAX7_01H",
+      "dbfId": "2128",
       "name": "Instructor Razuvious",
       "cardSet": "Naxxramas",
       "type": "Hero",
-      "health": 40,
+      "health": 55,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX7_01.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX7_01_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX7_01H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX7_01H_premium.gif",
       "locale": "enUS"
     },
     "Interloper": {
@@ -11389,15 +11385,15 @@
       "locale": "enUS"
     },
     "Patchwerk": {
-      "cardId": "NAX10_01",
-      "dbfId": "1825",
+      "cardId": "NAX10_01H",
+      "dbfId": "2131",
       "name": "Patchwerk",
       "cardSet": "Naxxramas",
       "type": "Hero",
-      "health": 30,
+      "health": 45,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX10_01.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX10_01_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX10_01H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX10_01H_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -11426,15 +11422,15 @@
       "locale": "enUS"
     },
     "Sapphiron": {
-      "cardId": "NAX14_01",
-      "dbfId": "1899",
+      "cardId": "NAX14_01H",
+      "dbfId": "2146",
       "name": "Sapphiron",
       "cardSet": "Naxxramas",
       "type": "Hero",
-      "health": 30,
+      "health": 45,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX14_01.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX14_01_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX14_01H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX14_01H_premium.gif",
       "locale": "enUS"
     },
     "Slave of KelThuzad": {
@@ -11497,16 +11493,16 @@
       "locale": "enUS"
     },
     "Frost Blast": {
-      "cardId": "NAX15_02",
-      "dbfId": "1901",
+      "cardId": "NAX15_02H",
+      "dbfId": "2148",
       "name": "Frost Blast",
       "cardSet": "Naxxramas",
       "type": "Hero Power",
       "cost": 0,
-      "text": "<b>Hero Power</b>\\nDeal 2 damage to the enemy hero and <b>Freeze</b> it.",
+      "text": "<b>Hero Power</b>\\nDeal 3 damage to the enemy hero and <b>Freeze</b> it.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX15_02.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX15_02_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX15_02H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX15_02H_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -11710,18 +11706,18 @@
       "locale": "enUS"
     },
     "Jaws": {
-      "cardId": "NAX12_03",
-      "dbfId": "1892",
+      "cardId": "NAX12_03H",
+      "dbfId": "2142",
       "name": "Jaws",
       "cardSet": "Naxxramas",
       "type": "Weapon",
       "cost": 1,
-      "attack": 1,
+      "attack": 3,
       "durability": 5,
       "text": "Whenever a minion with <b>Deathrattle</b> dies, gain +2 Attack.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX12_03.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX12_03_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX12_03H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX12_03H_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -12340,70 +12336,73 @@
       ]
     },
     "Hook": {
-      "cardId": "NAX10_02",
-      "dbfId": "1885",
+      "cardId": "NAX10_02H",
+      "dbfId": "2132",
       "name": "Hook",
       "cardSet": "Naxxramas",
       "type": "Weapon",
       "cost": 3,
-      "attack": 5,
+      "attack": 4,
       "durability": 8,
-      "text": "<b>Deathrattle:</b> Put this weapon into your hand.",
+      "text": "<b>Windfury</b>\\n<b>Deathrattle:</b> Put this weapon into your hand.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX10_02.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX10_02_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX10_02H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX10_02H_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
           "name": "Deathrattle"
+        },
+        {
+          "name": "Windfury"
         }
       ]
     },
     "Lady Blaumeux": {
-      "cardId": "NAX9_02",
-      "dbfId": "1879",
+      "cardId": "NAX9_02H",
+      "dbfId": "2123",
       "name": "Lady Blaumeux",
       "cardSet": "Naxxramas",
       "type": "Minion",
       "rarity": "Legendary",
       "cost": 3,
-      "attack": 1,
+      "attack": 2,
       "health": 7,
       "text": "Your hero is <b>Immune</b>.",
       "elite": true,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX9_02.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX9_02_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX9_02H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX9_02H_premium.gif",
       "locale": "enUS"
     },
     "Massive Runeblade": {
-      "cardId": "NAX7_04",
-      "dbfId": "1871",
+      "cardId": "NAX7_04H",
+      "dbfId": "2130",
       "name": "Massive Runeblade",
       "cardSet": "Naxxramas",
       "type": "Weapon",
       "cost": 3,
-      "attack": 5,
+      "attack": 10,
       "durability": 2,
       "text": "Deals double damage to heroes.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX7_04.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX7_04_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX7_04H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX7_04H_premium.gif",
       "locale": "enUS"
     },
     "Runeblade": {
-      "cardId": "NAX9_05",
-      "dbfId": "1882",
+      "cardId": "NAX9_05H",
+      "dbfId": "2126",
       "name": "Runeblade",
       "cardSet": "Naxxramas",
       "type": "Weapon",
       "cost": 3,
-      "attack": 1,
+      "attack": 2,
       "durability": 3,
-      "text": "Has +3 Attack if the other Horsemen are dead.",
+      "text": "Has +6 Attack if the other Horsemen are dead.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX9_05.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX9_05_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX9_05H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX9_05H_premium.gif",
       "locale": "enUS"
     },
     "Shade of Naxxramas": {
@@ -12433,20 +12432,20 @@
       ]
     },
     "Sir Zeliek": {
-      "cardId": "NAX9_04",
-      "dbfId": "1881",
+      "cardId": "NAX9_04H",
+      "dbfId": "2125",
       "name": "Sir Zeliek",
       "cardSet": "Naxxramas",
       "type": "Minion",
       "rarity": "Legendary",
       "cost": 3,
-      "attack": 1,
+      "attack": 2,
       "health": 7,
       "text": "Your hero is <b>Immune</b>.",
       "elite": true,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX9_04.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX9_04_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX9_04H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX9_04H_premium.gif",
       "locale": "enUS"
     },
     "Skeletal Smith": {
@@ -12506,20 +12505,20 @@
       "locale": "enUS"
     },
     "Thane Korthazz": {
-      "cardId": "NAX9_03",
-      "dbfId": "1880",
+      "cardId": "NAX9_03H",
+      "dbfId": "2124",
       "name": "Thane Korth'azz",
       "cardSet": "Naxxramas",
       "type": "Minion",
       "rarity": "Legendary",
       "cost": 3,
-      "attack": 1,
+      "attack": 2,
       "health": 7,
       "text": "Your hero is <b>Immune</b>.",
       "elite": true,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX9_03.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX9_03_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX9_03H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX9_03H_premium.gif",
       "locale": "enUS"
     },
     "Unrelenting Warrior": {
@@ -12651,16 +12650,16 @@
       ]
     },
     "Hateful Strike": {
-      "cardId": "NAX10_03",
-      "dbfId": "1886",
+      "cardId": "NAX10_03H",
+      "dbfId": "2133",
       "name": "Hateful Strike",
       "cardSet": "Naxxramas",
       "type": "Hero Power",
       "cost": 4,
       "text": "<b>Hero Power</b>\\nDestroy a minion.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX10_03.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX10_03_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX10_03H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX10_03H_premium.gif",
       "locale": "enUS"
     },
     "Necroknight": {
@@ -12956,16 +12955,16 @@
       "locale": "enUS"
     },
     "Chains": {
-      "cardId": "NAX15_04",
-      "dbfId": "1904",
+      "cardId": "NAX15_04H",
+      "dbfId": "2149",
       "name": "Chains",
       "cardSet": "Naxxramas",
       "type": "Hero Power",
       "cost": 8,
-      "text": "<b>Hero Power</b>\\nTake control of a random enemy minion until end of turn.",
+      "text": "<b>Hero Power</b>\\nTake control of a random enemy minion.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX15_04.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX15_04_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NAX15_04H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NAX15_04H_premium.gif",
       "locale": "enUS"
     }
   },
@@ -16281,15 +16280,15 @@
   },
   "Blackrock Mountain": {
     "Atramedes": {
-      "cardId": "BRMA16_1",
-      "dbfId": "2400",
+      "cardId": "BRMA16_1H",
+      "dbfId": "2474",
       "name": "Atramedes",
       "cardSet": "Blackrock Mountain",
       "type": "Hero",
       "health": 30,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA16_1.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA16_1_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA16_1H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA16_1H_premium.gif",
       "locale": "enUS"
     },
     "Baron Geddon": {
@@ -16575,15 +16574,15 @@
       "locale": "enUS"
     },
     "Lord Victor Nefarius": {
-      "cardId": "BRMA13_1",
-      "dbfId": "2378",
+      "cardId": "BRMA13_1H",
+      "dbfId": "2464",
       "name": "Lord Victor Nefarius",
       "cardSet": "Blackrock Mountain",
       "type": "Hero",
       "health": 30,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA13_1.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA13_1_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA13_1H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA13_1H_premium.gif",
       "locale": "enUS"
     },
     "Majordomo Executus": {
@@ -16614,15 +16613,15 @@
       ]
     },
     "Maloriak": {
-      "cardId": "BRMA15_1",
-      "dbfId": "2396",
+      "cardId": "BRMA15_1H",
+      "dbfId": "2473",
       "name": "Maloriak",
       "cardSet": "Blackrock Mountain",
       "type": "Hero",
       "health": 30,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA15_1.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA15_1_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA15_1H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA15_1H_premium.gif",
       "locale": "enUS"
     },
     "Melt": {
@@ -16669,15 +16668,15 @@
       ]
     },
     "Omnotron Defense System": {
-      "cardId": "BRMA14_1",
-      "dbfId": "2385",
+      "cardId": "BRMA14_1H",
+      "dbfId": "2468",
       "name": "Omnotron Defense System",
       "cardSet": "Blackrock Mountain",
       "type": "Hero",
       "health": 30,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA14_1.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA14_1_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA14_1H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA14_1H_premium.gif",
       "locale": "enUS"
     },
     "On Fire": {
@@ -17542,16 +17541,16 @@
       "locale": "enUS"
     },
     "True Form": {
-      "cardId": "BRMA13_2",
-      "dbfId": "2379",
+      "cardId": "BRMA13_2H",
+      "dbfId": "2465",
       "name": "True Form",
       "cardSet": "Blackrock Mountain",
       "type": "Hero Power",
       "cost": 1,
       "text": "<b>Hero Power</b>\\nLet the games begin!",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA13_2.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA13_2_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA13_2H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA13_2H_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -17602,16 +17601,16 @@
       "locale": "enUS"
     },
     "Wild Magic": {
-      "cardId": "BRMA13_4",
-      "dbfId": "2381",
+      "cardId": "BRMA13_4H",
+      "dbfId": "2467",
       "name": "Wild Magic",
       "cardSet": "Blackrock Mountain",
       "type": "Hero Power",
       "cost": 1,
       "text": "<b>Hero Power</b>\\nPut a random spell from your opponent's class into your hand.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA13_4.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA13_4_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA13_4H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA13_4H_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -17910,16 +17909,16 @@
       "locale": "enUS"
     },
     "The Majordomo": {
-      "cardId": "BRMA06_2",
-      "dbfId": "2335",
+      "cardId": "BRMA06_2H",
+      "dbfId": "2479",
       "name": "The Majordomo",
       "cardSet": "Blackrock Mountain",
       "type": "Hero Power",
       "cost": 2,
-      "text": "<b>Hero Power</b>\\nSummon a 1/3 Flamewaker Acolyte.",
+      "text": "<b>Hero Power</b>\\nSummon a 3/3 Flamewaker Acolyte.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA06_2.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA06_2_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA06_2H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA06_2H_premium.gif",
       "locale": "enUS"
     },
     "Blackwing Technician": {
@@ -18105,16 +18104,16 @@
       "locale": "enUS"
     },
     "Rock Out": {
-      "cardId": "BRMA04_4",
-      "dbfId": "2343",
+      "cardId": "BRMA04_4H",
+      "dbfId": "2476",
       "name": "Rock Out",
       "cardSet": "Blackrock Mountain",
       "type": "Spell",
       "cost": 3,
       "text": "Summon 3 Firesworn. <b>Overload:</b> (2)",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA04_4.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA04_4_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/BRMA04_4H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/BRMA04_4H_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -23728,17 +23727,16 @@
       "locale": "enUS"
     },
     "Eye of Hakkar": {
-      "cardId": "LOE_008",
-      "dbfId": "2880",
+      "cardId": "LOE_008H",
+      "dbfId": "38811",
       "name": "Eye of Hakkar",
       "cardSet": "The League of Explorers",
       "type": "Spell",
       "cost": 1,
       "text": "Take a secret from your opponent's deck and put it into the battlefield.",
-      "flavor": "-",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/LOE_008.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/LOE_008_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/LOE_008H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/LOE_008H_premium.gif",
       "locale": "enUS"
     },
     "Hungry Naga": {
@@ -23811,8 +23809,8 @@
       ]
     },
     "Rare Spear": {
-      "cardId": "LOEA09_4",
-      "dbfId": "24428",
+      "cardId": "LOEA09_4H",
+      "dbfId": "38810",
       "name": "Rare Spear",
       "cardSet": "The League of Explorers",
       "type": "Weapon",
@@ -23821,8 +23819,8 @@
       "durability": 2,
       "text": "Whenever your opponent plays a Rare card, gain +1/+1.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/LOEA09_4.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/LOEA09_4_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/LOEA09_4H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/LOEA09_4H_premium.gif",
       "locale": "enUS"
     },
     "Reliquary Seeker": {
@@ -24335,8 +24333,8 @@
       "locale": "enUS"
     },
     "Boneraptor": {
-      "cardId": "LOEA15_3",
-      "dbfId": "37613",
+      "cardId": "LOEA15_3H",
+      "dbfId": "38812",
       "name": "Boneraptor",
       "cardSet": "The League of Explorers",
       "type": "Minion",
@@ -24345,8 +24343,8 @@
       "health": 2,
       "text": "<b>Battlecry:</b>Take control of your opponent's weapon.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/LOEA15_3.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/LOEA15_3_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/LOEA15_3H.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/LOEA15_3H_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -24540,18 +24538,18 @@
       "locale": "enUS"
     },
     "Tolvir Hoplite": {
-      "cardId": "LOEA01_12h",
-      "dbfId": "38504",
+      "cardId": "LOEA01_12",
+      "dbfId": "36023",
       "name": "Tol'vir Hoplite",
       "cardSet": "The League of Explorers",
       "type": "Minion",
       "cost": 3,
       "attack": 5,
-      "health": 5,
+      "health": 2,
       "text": "<b>Deathrattle:</b> Deal 5 damage to both heroes.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/LOEA01_12h.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/LOEA01_12h_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/LOEA01_12.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/LOEA01_12_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -26868,17 +26866,18 @@
       ]
     },
     "Slime": {
-      "cardId": "OG_314b",
-      "dbfId": "38968",
+      "cardId": "OG_249a",
+      "dbfId": "38783",
       "name": "Slime",
       "cardSet": "Whispers of the Old Gods",
       "type": "Minion",
       "cost": 2,
       "attack": 2,
       "health": 2,
-      "playerClass": "Warrior",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/OG_314b.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/OG_314b_premium.gif",
+      "artist": "Anton Magdalina",
+      "playerClass": "Neutral",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/OG_249a.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/OG_249a_premium.gif",
       "locale": "enUS"
     },
     "Stormcrack": {
@@ -29387,15 +29386,15 @@
       "locale": "enUS"
     },
     "Curator": {
-      "cardId": "KARA_07_01heroic",
-      "dbfId": "40302",
+      "cardId": "KARA_09_02",
+      "dbfId": "39647",
       "name": "Curator",
       "cardSet": "One Night in Karazhan",
       "type": "Hero",
-      "health": 40,
+      "health": 30,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_07_01heroic.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_07_01heroic_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_09_02.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_09_02_premium.gif",
       "locale": "enUS"
     },
     "Dark Pact": {
@@ -29612,27 +29611,29 @@
       ]
     },
     "Netherspite": {
-      "cardId": "KARA_08_01H",
-      "dbfId": "40060",
+      "cardId": "KARA_08_01",
+      "dbfId": "39678",
       "name": "Netherspite",
       "cardSet": "One Night in Karazhan",
       "type": "Hero",
       "health": 30,
+      "artist": "John Polidora",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_08_01H.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_08_01H_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_08_01.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_08_01_premium.gif",
       "locale": "enUS"
     },
     "Nightbane": {
-      "cardId": "KARA_11_01heroic",
-      "dbfId": "40689",
+      "cardId": "KARA_11_01",
+      "dbfId": "39665",
       "name": "Nightbane",
       "cardSet": "One Night in Karazhan",
       "type": "Hero",
       "health": 30,
+      "artist": "Laurel Austin",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_11_01heroic.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_11_01heroic_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_11_01.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_11_01_premium.gif",
       "locale": "enUS"
     },
     "Prince Malchezaar": {
@@ -29711,15 +29712,15 @@
       "locale": "enUS"
     },
     "Shade of Aran": {
-      "cardId": "KARA_12_01H",
-      "dbfId": "40065",
+      "cardId": "KARA_12_01",
+      "dbfId": "39668",
       "name": "Shade of Aran",
       "cardSet": "One Night in Karazhan",
       "type": "Hero",
       "health": 30,
       "playerClass": "Mage",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_12_01H.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_12_01H_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_12_01.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_12_01_premium.gif",
       "locale": "enUS"
     },
     "Silver Might": {
@@ -29769,15 +29770,16 @@
       "locale": "enUS"
     },
     "Terestian Illhoof": {
-      "cardId": "KARA_09_01heroic",
-      "dbfId": "40319",
+      "cardId": "KARA_09_01",
+      "dbfId": "39644",
       "name": "Terestian Illhoof",
       "cardSet": "One Night in Karazhan",
       "type": "Hero",
-      "health": 40,
+      "health": 30,
+      "artist": "Matt Cavotta",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_09_01heroic.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_09_01heroic_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_09_01.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_09_01_premium.gif",
       "locale": "enUS"
     },
     "The Crone": {
@@ -29862,16 +29864,17 @@
       "locale": "enUS"
     },
     "Ley Lines": {
-      "cardId": "KARA_12_02H",
-      "dbfId": "40107",
+      "cardId": "KARA_12_02",
+      "dbfId": "39669",
       "name": "Ley Lines",
       "cardSet": "One Night in Karazhan",
       "type": "Hero Power",
       "cost": 0,
-      "text": "[x]<b>Passive Hero Power</b>\\nBoth players have\\n<b>Spell Damage +5</b>.",
+      "text": "[x]<b>Passive Hero Power</b>\\nBoth players have\\n<b>Spell Damage +3</b>.",
+      "artist": "Slawomir Maniak",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_12_02H.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_12_02H_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_12_02.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_12_02_premium.gif",
       "locale": "enUS"
     },
     "Trembling": {
@@ -30062,19 +30065,20 @@
       "locale": "enUS"
     },
     "Icky Imp": {
-      "cardId": "KARA_09_03a_heroic",
-      "dbfId": "40320",
+      "cardId": "KARA_09_03a",
+      "dbfId": "39643",
       "name": "Icky Imp",
       "cardSet": "One Night in Karazhan",
       "type": "Minion",
       "cost": 1,
-      "attack": 2,
-      "health": 2,
+      "attack": 1,
+      "health": 1,
       "text": "<b>Deathrattle:</b> Resummon this minion and Illhoof loses 2 Health.",
+      "artist": "Andrew Hou",
       "race": "Demon",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_09_03a_heroic.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_09_03a_heroic_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_09_03a.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_09_03a_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -30496,17 +30500,22 @@
       ]
     },
     "Legion": {
-      "cardId": "KARA_00_02H",
-      "dbfId": "40080",
+      "cardId": "KARA_13_13",
+      "dbfId": "40563",
       "name": "Legion",
       "cardSet": "One Night in Karazhan",
       "type": "Hero Power",
       "cost": 2,
       "text": "<b>Hero Power</b>\\nSummon a 6/6 Abyssal.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_00_02H.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_00_02H_premium.gif",
-      "locale": "enUS"
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_13_13.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_13_13_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "AIMustPlay"
+        }
+      ]
     },
     "Maelstrom Portal": {
       "cardId": "KAR_073",
@@ -30528,16 +30537,17 @@
       "locale": "enUS"
     },
     "Many Imps": {
-      "cardId": "KARA_09_03heroic",
-      "dbfId": "40322",
+      "cardId": "KARA_09_03",
+      "dbfId": "39646",
       "name": "Many Imps!",
       "cardSet": "One Night in Karazhan",
       "type": "Spell",
       "cost": 2,
       "text": "Summon 2 Icky Imps.",
+      "artist": "Andrew Hou",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_09_03heroic.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_09_03heroic_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_09_03.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_09_03_premium.gif",
       "locale": "enUS"
     },
     "Medivhs Valet": {
@@ -30887,16 +30897,17 @@
       ]
     },
     "Demonic Presence": {
-      "cardId": "KARA_13_12H",
-      "dbfId": "40841",
+      "cardId": "KARA_13_12",
+      "dbfId": "40562",
       "name": "Demonic Presence",
       "cardSet": "One Night in Karazhan",
       "type": "Spell",
       "cost": 3,
-      "text": "Draw 3 cards.\\nGain 10 Armor.",
+      "text": "Draw 2 cards.\\nGain 10 Armor.",
+      "artist": "Daren Bader",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_13_12H.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_13_12H_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_13_12.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_13_12_premium.gif",
       "locale": "enUS"
     },
     "Demons Loose": {
@@ -30956,16 +30967,17 @@
       ]
     },
     "Haywire Mech": {
-      "cardId": "KARA_07_07heroic",
-      "dbfId": "40307",
+      "cardId": "KARA_07_07",
+      "dbfId": "39639",
       "name": "Haywire Mech!",
       "cardSet": "One Night in Karazhan",
       "type": "Spell",
       "cost": 3,
       "text": "Summon a random Mech.",
+      "artist": "Skan Srisuwan",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_07_07heroic.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_07_07heroic_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_07_07.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_07_07_premium.gif",
       "locale": "enUS"
     },
     "Knife": {
@@ -31498,16 +31510,16 @@
       "locale": "enUS"
     },
     "Summon Kilrek": {
-      "cardId": "KARA_09_05heroic",
-      "dbfId": "40860",
+      "cardId": "KARA_09_05",
+      "dbfId": "39662",
       "name": "Summon Kil'rek",
       "cardSet": "One Night in Karazhan",
       "type": "Spell",
       "cost": 4,
       "text": "Summon Kil'rek.",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_09_05heroic.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_09_05heroic_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KARA_09_05.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KARA_09_05_premium.gif",
       "locale": "enUS"
     },
     "White Knight": {
@@ -32263,14 +32275,14 @@
       "locale": "enUS"
     },
     "Smuggling": {
-      "cardId": "CFM_643e",
-      "dbfId": "40481",
+      "cardId": "CFM_754e",
+      "dbfId": "40573",
       "name": "Smuggling",
       "cardSet": "Mean Streets of Gadgetzan",
       "type": "Enchantment",
-      "text": "+1 Attack from Hobart Grapplehammer.",
-      "artist": "A.J. Nazzaro",
-      "playerClass": "Warrior",
+      "text": "Increased stats from Grimy Gadgeteer.",
+      "artist": "Wayne Reynolds",
+      "playerClass": "Neutral",
       "locale": "enUS"
     },
     "The Scoop": {
@@ -34716,8 +34728,8 @@
       ]
     },
     "Doppelgangster": {
-      "cardId": "CFM_668t",
-      "dbfId": "42146",
+      "cardId": "CFM_668t2",
+      "dbfId": "42213",
       "name": "Doppelgangster",
       "cardSet": "Mean Streets of Gadgetzan",
       "type": "Minion",
@@ -34728,8 +34740,8 @@
       "text": "<b>Battlecry:</b> Summon 2 copies of this minion.",
       "artist": "Zoltan Boros",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/CFM_668t.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/CFM_668t_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/CFM_668t2.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/CFM_668t2_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -37716,8 +37728,8 @@
       ]
     },
     "Stubborn Gastropod": {
-      "cardId": "ICC_828t2",
-      "dbfId": "46204",
+      "cardId": "UNG_808",
+      "dbfId": "41318",
       "name": "Stubborn Gastropod",
       "cardSet": "Journey to Un'Goro",
       "type": "Minion",
@@ -37726,11 +37738,14 @@
       "cost": 2,
       "attack": 1,
       "health": 2,
-      "text": "<b>Taunt</b>, <b>Poisonous</b>",
+      "text": "<b>Taunt</b>\\n  <b>Poisonous</b>",
+      "flavor": "Stubbornly pursuing its dream to become Azeroth's fastest animal!",
+      "artist": "Aaron Miller",
+      "collectible": true,
       "race": "Beast",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/ICC_828t2.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/ICC_828t2_premium.gif",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/UNG_808.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/UNG_808_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -37956,8 +37971,8 @@
       ]
     },
     "Giant Wasp": {
-      "cardId": "ICC_828t3",
-      "dbfId": "46672",
+      "cardId": "UNG_814",
+      "dbfId": "41328",
       "name": "Giant Wasp",
       "cardSet": "Journey to Un'Goro",
       "type": "Minion",
@@ -37966,11 +37981,14 @@
       "cost": 3,
       "attack": 2,
       "health": 2,
-      "text": "<b>Stealth</b>, <b>Poisonous</b>",
+      "text": "<b>Stealth</b>\\n <b>Poisonous</b>",
+      "flavor": "Float like a butterfly, sting like a giant wasp!",
+      "artist": "Luca Zontini",
+      "collectible": true,
       "race": "Beast",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/ICC_828t3.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/ICC_828t3_premium.gif",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/UNG_814.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/UNG_814_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -43166,26 +43184,6 @@
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/ICCA01_010_premium.gif",
       "locale": "enUS"
     },
-    "Abominable Knuckles": {
-      "cardId": "ICCA09_003t4",
-      "dbfId": "43040",
-      "name": "Abominable Knuckles",
-      "cardSet": "Knights of the Frozen Throne",
-      "type": "Weapon",
-      "cost": 4,
-      "attack": 4,
-      "durability": 2,
-      "text": "<b>Windfury</b>",
-      "playerClass": "Death Knight",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/ICCA09_003t4.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/ICCA09_003t4_premium.gif",
-      "locale": "enUS",
-      "mechanics": [
-        {
-          "name": "Windfury"
-        }
-      ]
-    },
     "Arfus": {
       "cardId": "ICC_854",
       "dbfId": "45366",
@@ -44165,28 +44163,6 @@
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/ICC_025t_premium.gif",
       "locale": "enUS"
     },
-    "Spreading Plague": {
-      "cardId": "ICC_054",
-      "dbfId": "42656",
-      "name": "Spreading Plague",
-      "cardSet": "Knights of the Frozen Throne",
-      "type": "Spell",
-      "rarity": "Rare",
-      "cost": 5,
-      "text": "Summon a 1/5 Scarab with <b>Taunt</b>. If your_opponent has more minions, cast this again.",
-      "flavor": "In the past, plagues were spread by mice or fleas. These days they're spread by elves.",
-      "artist": "Alex Alexandrov",
-      "collectible": true,
-      "playerClass": "Druid",
-      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/ICC_054.png",
-      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/ICC_054_premium.gif",
-      "locale": "enUS",
-      "mechanics": [
-        {
-          "name": "Taunt"
-        }
-      ]
-    },
     "Sunborne Valkyr": {
       "cardId": "ICC_028",
       "dbfId": "42440",
@@ -44650,6 +44626,28 @@
       "mechanics": [
         {
           "name": "Spell Damage"
+        }
+      ]
+    },
+    "Spreading Plague": {
+      "cardId": "ICC_054",
+      "dbfId": "42656",
+      "name": "Spreading Plague",
+      "cardSet": "Knights of the Frozen Throne",
+      "type": "Spell",
+      "rarity": "Rare",
+      "cost": 6,
+      "text": "Summon a 1/5 Scarab with <b>Taunt</b>. If your_opponent has more minions, cast this again.",
+      "flavor": "In the past, plagues were spread by mice or fleas. These days they're spread by elves.",
+      "artist": "Alex Alexandrov",
+      "collectible": true,
+      "playerClass": "Druid",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/ICC_054.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/ICC_054_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Taunt"
         }
       ]
     },
@@ -45542,12 +45540,11 @@
       "locale": "enUS"
     },
     "Fate": {
-      "cardId": "TB_PickYourFate_Windfury",
-      "dbfId": "38696",
+      "cardId": "TB_PickYourFate_10_Ench",
+      "dbfId": "38806",
       "name": "Fate",
       "cardSet": "Tavern Brawl",
       "type": "Enchantment",
-      "text": "This minion has <b>Windfury</b>",
       "playerClass": "Neutral",
       "locale": "enUS"
     },
@@ -45844,8 +45841,8 @@
       "locale": "enUS"
     },
     "Nefarian": {
-      "cardId": "TB_CoOpv3_Boss",
-      "dbfId": "40259",
+      "cardId": "TB_CoOpv3_Boss_FB",
+      "dbfId": "45369",
       "name": "Nefarian",
       "cardSet": "Tavern Brawl",
       "type": "Minion",
@@ -45857,8 +45854,8 @@
       "elite": true,
       "race": "Dragon",
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_CoOpv3_Boss.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_CoOpv3_Boss_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_CoOpv3_Boss_FB.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_CoOpv3_Boss_FB_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
@@ -46525,16 +46522,16 @@
       "locale": "enUS"
     },
     "White King": {
-      "cardId": "KAR_a10_Boss1H_TB",
-      "dbfId": "41921",
+      "cardId": "KAR_a10_Boss1H_TB22",
+      "dbfId": "42346",
       "name": "White King",
       "cardSet": "Tavern Brawl",
       "type": "Hero",
       "attack": 0,
-      "health": 10,
+      "health": 30,
       "playerClass": "Neutral",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KAR_a10_Boss1H_TB.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KAR_a10_Boss1H_TB_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/KAR_a10_Boss1H_TB22.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/KAR_a10_Boss1H_TB22_premium.gif",
       "locale": "enUS"
     },
     "WHY WONT YOU DIE": {
@@ -46725,6 +46722,20 @@
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_LethalSetup001a_premium.gif",
       "locale": "enUS"
     },
+    "Dark Light": {
+      "cardId": "TB_TagTeam_Paladin",
+      "dbfId": "41016",
+      "name": "Dark Light",
+      "cardSet": "Tavern Brawl",
+      "type": "Spell",
+      "faction": "Neutral",
+      "cost": 0,
+      "text": "Bend the Light to your will, while you unleash the Apocalypse!",
+      "playerClass": "Paladin",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Paladin.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Paladin_premium.gif",
+      "locale": "enUS"
+    },
     "Death Becomes": {
       "cardId": "TB_TagTeam_Warlock",
       "dbfId": "41020",
@@ -46733,7 +46744,7 @@
       "type": "Spell",
       "faction": "Neutral",
       "cost": 0,
-      "text": "You love death and hate weapons.",
+      "text": "Summon monstrous demons and burn away the enemy's weapons",
       "playerClass": "Warlock",
       "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Warlock.png",
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Warlock_premium.gif",
@@ -46897,6 +46908,20 @@
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_CoOpv3_006_premium.gif",
       "locale": "enUS"
     },
+    "Elemental Secrets": {
+      "cardId": "TB_TagTeam_Mage",
+      "dbfId": "41015",
+      "name": "Elemental Secrets",
+      "cardSet": "Tavern Brawl",
+      "type": "Spell",
+      "faction": "Neutral",
+      "cost": 0,
+      "text": "Guard your secrets and unleash elemental fury!",
+      "playerClass": "Mage",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Mage.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Mage_premium.gif",
+      "locale": "enUS"
+    },
     "Explosive Rune": {
       "cardId": "TB_Coopv3_009t",
       "dbfId": "40499",
@@ -47007,20 +47032,6 @@
       "playerClass": "Neutral",
       "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_PickYourFate_5.png",
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_PickYourFate_5_premium.gif",
-      "locale": "enUS"
-    },
-    "Fierce Forest": {
-      "cardId": "TB_TagTeam_Druid",
-      "dbfId": "41004",
-      "name": "Fierce Forest",
-      "cardSet": "Tavern Brawl",
-      "type": "Spell",
-      "faction": "Neutral",
-      "cost": 0,
-      "text": "Fast and fierce, this deck hates weapons!",
-      "playerClass": "Druid",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Druid.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Druid_premium.gif",
       "locale": "enUS"
     },
     "Fight the Lich King": {
@@ -47344,20 +47355,6 @@
       "playerClass": "Neutral",
       "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_PickYourFate_11b.png",
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_PickYourFate_11b_premium.gif",
-      "locale": "enUS"
-    },
-    "Mysterious e-SCALE-ation": {
-      "cardId": "TB_TagTeam_Paladin",
-      "dbfId": "41016",
-      "name": "Mysterious e-SCALE-ation",
-      "cardSet": "Tavern Brawl",
-      "type": "Spell",
-      "faction": "Neutral",
-      "cost": 0,
-      "text": "Fast secrets, and dragons.",
-      "playerClass": "Paladin",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Paladin.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Paladin_premium.gif",
       "locale": "enUS"
     },
     "New Hero": {
@@ -47690,6 +47687,20 @@
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/FB_LK_Rogue_copy_premium.gif",
       "locale": "enUS"
     },
+    "Rumble in the Jungle": {
+      "cardId": "TB_TagTeam_Druid",
+      "dbfId": "41004",
+      "name": "Rumble in the Jungle",
+      "cardSet": "Tavern Brawl",
+      "type": "Spell",
+      "faction": "Neutral",
+      "cost": 0,
+      "text": "Enter the jungle with giant beasts and darker things...",
+      "playerClass": "Druid",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Druid.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Druid_premium.gif",
+      "locale": "enUS"
+    },
     "Second Class Druid": {
       "cardId": "TB_ClassRandom_Druid",
       "dbfId": "40044",
@@ -47807,20 +47818,6 @@
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_ClassRandom_Warrior_premium.gif",
       "locale": "enUS"
     },
-    "Secret Magus": {
-      "cardId": "TB_TagTeam_Mage",
-      "dbfId": "41015",
-      "name": "Secret Magus",
-      "cardSet": "Tavern Brawl",
-      "type": "Spell",
-      "faction": "Neutral",
-      "cost": 0,
-      "text": "Kabal, and the master of secrets.",
-      "playerClass": "Mage",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Mage.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Mage_premium.gif",
-      "locale": "enUS"
-    },
     "Secrets of Shadow": {
       "cardId": "TB_Coopv3_102a",
       "dbfId": "40384",
@@ -47923,20 +47920,6 @@
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_PickYourFate_8_premium.gif",
       "locale": "enUS"
     },
-    "Spy Stalker": {
-      "cardId": "TB_TagTeam_Hunter",
-      "dbfId": "41014",
-      "name": "Spy Stalker",
-      "cardSet": "Tavern Brawl",
-      "type": "Spell",
-      "faction": "Neutral",
-      "cost": 0,
-      "text": "The grandmaster of secrets.",
-      "playerClass": "Hunter",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Hunter.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Hunter_premium.gif",
-      "locale": "enUS"
-    },
     "Tarnished Coin": {
       "cardId": "TB_011",
       "dbfId": "2702",
@@ -47996,7 +47979,7 @@
       "type": "Spell",
       "faction": "Neutral",
       "cost": 0,
-      "text": "Use weapons to slowly pick apart your foe.",
+      "text": "Enrage your allies, while wielding weapons at your foes!",
       "playerClass": "Warrior",
       "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Warrior.png",
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Warrior_premium.gif",
@@ -48010,7 +47993,7 @@
       "type": "Spell",
       "faction": "Neutral",
       "cost": 0,
-      "text": "Fast spell deck. Loves weapons, and Yogg-Saron.",
+      "text": "Assassinate with blinding speed!",
       "playerClass": "Rogue",
       "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Rogue.png",
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Rogue_premium.gif",
@@ -48037,7 +48020,7 @@
       "type": "Spell",
       "faction": "Neutral",
       "cost": 0,
-      "text": "Blast away your opponent's secrets!",
+      "text": "Uncover your adversary's secrets, while assembling your totem army",
       "playerClass": "Shaman",
       "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Shaman.png",
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Shaman_premium.gif",
@@ -48064,10 +48047,24 @@
       "type": "Spell",
       "faction": "Neutral",
       "cost": 0,
-      "text": "Slow, but lots of <b>Inspire</b> minions.",
+      "text": "<b>Inspire</b> your minions, even in death.",
       "playerClass": "Priest",
       "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Priest.png",
       "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Priest_premium.gif",
+      "locale": "enUS"
+    },
+    "Unleash the Beasts": {
+      "cardId": "TB_TagTeam_Hunter",
+      "dbfId": "41014",
+      "name": "Unleash the Beasts",
+      "cardSet": "Tavern Brawl",
+      "type": "Spell",
+      "faction": "Neutral",
+      "cost": 0,
+      "text": "Release a stampede of beasts while hunting for the Marsh Queen!",
+      "playerClass": "Hunter",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/TB_TagTeam_Hunter.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/TB_TagTeam_Hunter_premium.gif",
       "locale": "enUS"
     },
     "Vicious Swipe": {
@@ -50896,8 +50893,8 @@
       "locale": "enUS"
     },
     "Fireblast": {
-      "cardId": "CS2_034_H2",
-      "dbfId": "39791",
+      "cardId": "CS2_034_H1",
+      "dbfId": "2831",
       "name": "Fireblast",
       "cardSet": "Hero Skins",
       "type": "Hero Power",
@@ -50905,8 +50902,8 @@
       "cost": 2,
       "text": "<b>Hero Power</b>\\nDeal $1 damage.",
       "playerClass": "Mage",
-      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_034_H2.png",
-      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/CS2_034_H2_premium.gif",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_034_H1.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/CS2_034_H1_premium.gif",
       "locale": "enUS"
     },
     "Fireblast Rank 2": {

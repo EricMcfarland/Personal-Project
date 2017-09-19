@@ -26,6 +26,21 @@ var cardlist = {
                     "name": "OneTurnEffect"
                 }
             ]
+        },
+        "Inspired2": {
+            "cardId": "CS2_188o",
+            "dbfId": "809",
+            "name": "'Inspired'",
+            "cardSet": "Classic",
+            "type": "Enchantment",
+            "text": "This minion has +2 Attack this turn.",
+            "playerClass": "Neutral",
+            "locale": "enUS",
+            "mechanics": [
+                {
+                    "name": "OneTurnEffect"
+                }
+            ]
         }
     },
     "Hall of Fame": {
@@ -51,27 +66,54 @@ var samplelist = {
             '4a': '4a',
         },
     },
-        'B': {
-            'b1': 'b1',
-            'b2': 'b2',
-        }
-    
+    'B': {
+        'b1': 'b1',
+        'b2': 'b2',
+    }
+
 
 }
 
-// var filteredcardList = filterList(cardlist, ["Classic", "Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan", "One Night in Karazhan", "Journey to Un'Goro", "Knights of the Frozen Throne"])
-
+// var filteredcardList = filterList(cardlist, ["Classic", "Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan", "One Night in Karazhan", "Journey to Un'Goro", "Knights of the Frozen Throne"], ['*'],['name'])
+// console.log("filtered list is:")
 // console.log(JSON.stringify(filteredcardList, null, 2))
 
-var filteredSampleList = filterList(samplelist, ['A', 'B'])
-
+var filteredSampleList = filterList(samplelist, ['A', 'B'],['*'],['3a'])
+console.log("filtered list is:")
 console.log(JSON.stringify(filteredSampleList, null, 2))
 
 
-
+//filterList() Will remove all objects within an object that does not contain
+//the given parameter filters. The filters will be applied serially going down the
+//children tree of the object. 
+//TODO: Doesnt filter out object of depths shallowe than the number of arguments
+//Input (list, n number of arguments)
+//  -list is required to be an object
+//  -arguments are to be arrays of strings
+//      -an argument of ['*'] is a pass all argument that will pass all objects in that level of the tree
+//Output
+// -a filtered object based on the argument filters
+//
+//Example
+//list = var samplelist = {
+//     'A': {
+//         'a1': 'a1',
+//         'a2': 'a2',
+//         'a3': {
+//             '3a': '3a',
+//             '4a': '4a',
+//         },
+//     },
+//     'B': {
+//         'b1': 'b1',
+//         'b2': 'b2',
+//     }
+// }
+//filterList(list, ['A'],['*'],[])
 function filterList(list) {
     var args = arguments
-    console.log(JSON.stringify(list,null,2))
+    console.log("input list is:")
+    console.log(JSON.stringify(list, null, 2))
     var arrayOfFilters = [], newList;
     //handle no filter passed, return input value
     if (arguments.length === 1) {
@@ -115,27 +157,21 @@ function filterList(list) {
     //filters out all the keys not included in the filter
     //recursively builds the object applying all the filters
     newList = Object.keys(list)
-        .filter(key => currentFilter.includes(key))
-        .reduce((obj, key) => {
-
-            //TODO: 
-            // ─── DURING SECOND KEY THE FIRST LIST[KEY] IS BEING ADDED TO NEWARGS 
-            //
-
-            var newArgs = arrayOfFilters;
-
-            console.log("list["+key+"] is:")
+        .filter(key => currentFilter.includes(key))         //filter out by key names
+        .reduce((obj, key) => {                             //build new list of object by calling
+            //only the filtered key values
+            console.log("list[" + key + "] is:")
             console.log(list[key])
             if (list[key] instanceof Object) {
-                newArgs.unshift(list[key])
+
                 console.log("new args are:")
-                console.log(newArgs)
-                obj[key] = filterList.apply(this, newArgs)
+                console.log([list[key]].concat(arrayOfFilters))
+                obj[key] = filterList.apply(this, [list[key]].concat(arrayOfFilters))
                 return obj
 
 
             } else {
-                //handles case
+                //handles case when last object is only a key:value pair
                 // console.log("else")
                 // console.log("list["+key+"] is:")
                 // console.log(list[key])

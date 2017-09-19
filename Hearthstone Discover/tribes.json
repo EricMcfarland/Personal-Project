@@ -1,0 +1,776 @@
+{
+  "Beast": {
+    "Frog": {
+      "cardId": "hexfrog",
+      "dbfId": "548",
+      "name": "Frog",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "attack": 0,
+      "health": 1,
+      "text": "<b>Taunt</b>",
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/hexfrog.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/hexfrog_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Taunt"
+        }
+      ]
+    },
+    "Boar": {
+      "cardId": "CS2_boar",
+      "dbfId": "298",
+      "name": "Boar",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_boar.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/CS2_boar_premium.gif",
+      "locale": "enUS"
+    },
+    "Sheep": {
+      "cardId": "CS2_tk1",
+      "dbfId": "796",
+      "name": "Sheep",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_tk1.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/CS2_tk1_premium.gif",
+      "locale": "enUS"
+    },
+    "Stonetusk Boar": {
+      "cardId": "CS2_171",
+      "dbfId": "648",
+      "name": "Stonetusk Boar",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "text": "<b>Charge</b>",
+      "flavor": "This card is boaring.",
+      "artist": "Howard Lyon",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Hunter Level 53.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_171.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_171_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Charge"
+        }
+      ]
+    },
+    "Timber Wolf": {
+      "cardId": "DS1_175",
+      "dbfId": "606",
+      "name": "Timber Wolf",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "text": "Your other Beasts have +1_Attack.",
+      "flavor": "Other beasts totally dig hanging out with timber wolves.",
+      "artist": "Malcolm Davis",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Hunter",
+      "howToGet": "Unlocked at Level 1.",
+      "howToGetGold": "Unlocked at Level 23.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/DS1_175.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/DS1_175_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Aura"
+        }
+      ]
+    },
+    "Bloodfen Raptor": {
+      "cardId": "CS2_172",
+      "dbfId": "216",
+      "name": "Bloodfen Raptor",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Horde",
+      "rarity": "Free",
+      "cost": 2,
+      "attack": 3,
+      "health": 2,
+      "flavor": "\"Kill 30 raptors.\" - Hemet Nesingwary",
+      "artist": "Dan Brereton",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Hunter Level 57.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_172.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_172_premium.gif",
+      "locale": "enUS"
+    },
+    "River Crocolisk": {
+      "cardId": "CS2_120",
+      "dbfId": "1369",
+      "name": "River Crocolisk",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "rarity": "Free",
+      "cost": 2,
+      "attack": 2,
+      "health": 3,
+      "flavor": "Edward \"Lefty\" Smith tried to make luggage out of a river crocolisk once.",
+      "artist": "Daren Bader",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Druid Level 55.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_120.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_120_premium.gif",
+      "locale": "enUS"
+    },
+    "Huffer": {
+      "cardId": "NEW1_034",
+      "dbfId": "100",
+      "name": "Huffer",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "rarity": "Common",
+      "cost": 3,
+      "attack": 4,
+      "health": 2,
+      "text": "<b>Charge</b>",
+      "race": "Beast",
+      "playerClass": "Hunter",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_034.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NEW1_034_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Charge"
+        }
+      ]
+    },
+    "Ironfur Grizzly": {
+      "cardId": "CS2_125",
+      "dbfId": "1182",
+      "name": "Ironfur Grizzly",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 3,
+      "attack": 3,
+      "health": 3,
+      "text": "<b>Taunt</b>",
+      "flavor": "\"Bear Carcass 1/10\"",
+      "artist": "Lars Grant-West",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Hunter Level 59.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_125.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_125_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Taunt"
+        }
+      ]
+    },
+    "Leokk": {
+      "cardId": "NEW1_033",
+      "dbfId": "226",
+      "name": "Leokk",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "rarity": "Common",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "text": "Your other minions have +1 Attack.",
+      "race": "Beast",
+      "playerClass": "Hunter",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_033.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NEW1_033_premium.gif",
+      "locale": "enUS"
+    },
+    "Misha": {
+      "cardId": "NEW1_032",
+      "dbfId": "959",
+      "name": "Misha",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "rarity": "Common",
+      "cost": 3,
+      "attack": 4,
+      "health": 4,
+      "text": "<b>Taunt</b>",
+      "race": "Beast",
+      "playerClass": "Hunter",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_032.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NEW1_032_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Taunt"
+        }
+      ]
+    },
+    "Silverback Patriarch": {
+      "cardId": "CS2_127",
+      "dbfId": "67",
+      "name": "Silverback Patriarch",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Horde",
+      "rarity": "Free",
+      "cost": 3,
+      "attack": 1,
+      "health": 4,
+      "text": "<b>Taunt</b>",
+      "flavor": "He likes to act like he's in charge, but the silverback matriarch actually runs things.",
+      "artist": "Daren Bader",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Warrior Level 53.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_127.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_127_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Taunt"
+        }
+      ]
+    },
+    "Oasis Snapjaw": {
+      "cardId": "CS2_119",
+      "dbfId": "1370",
+      "name": "Oasis Snapjaw",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "rarity": "Free",
+      "cost": 4,
+      "attack": 2,
+      "health": 7,
+      "flavor": "His dreams of flying and breathing fire like his idol will never be realized.",
+      "artist": "Ittoku",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Druid Level 51.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_119.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_119_premium.gif",
+      "locale": "enUS"
+    },
+    "Starving Buzzard": {
+      "cardId": "CS2_237",
+      "dbfId": "1241",
+      "name": "Starving Buzzard",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "rarity": "Free",
+      "cost": 5,
+      "attack": 3,
+      "health": 2,
+      "text": "Whenever you summon a Beast, draw a card.",
+      "flavor": "If you feed him, he loses his whole <i>identity</i>.",
+      "artist": "Bernie Kang",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Hunter",
+      "howToGet": "Unlocked at Level 4.",
+      "howToGetGold": "Unlocked at Level 47.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_237.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_237_premium.gif",
+      "locale": "enUS"
+    },
+    "Tundra Rhino": {
+      "cardId": "DS1_178",
+      "dbfId": "699",
+      "name": "Tundra Rhino",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 5,
+      "attack": 2,
+      "health": 5,
+      "text": "Your Beasts have <b>Charge</b>.",
+      "flavor": "Tundra rhinos are often mistaken for kodos.  Or am I mistaken?",
+      "artist": "Lars Grant-West",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Hunter",
+      "howToGet": "Unlocked at Level 8.",
+      "howToGetGold": "Unlocked at Level 43.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/DS1_178.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/DS1_178_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Charge"
+        },
+        {
+          "name": "Aura"
+        }
+      ]
+    },
+    "Core Hound": {
+      "cardId": "CS2_201",
+      "dbfId": "1687",
+      "name": "Core Hound",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "rarity": "Free",
+      "cost": 7,
+      "attack": 9,
+      "health": 5,
+      "flavor": "You don’t tame a Core Hound. You just train it to eat someone else before it eats you.",
+      "artist": "E.M. Gist",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Hunter Level 51.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_201.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_201_premium.gif",
+      "locale": "enUS"
+    }
+  },
+  "Murloc": {
+    "Grimscale Oracle": {
+      "cardId": "EX1_508",
+      "dbfId": "510",
+      "name": "Grimscale Oracle",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "text": "Your other Murlocs have +1 Attack.",
+      "flavor": "These are the brainy murlocs.  It turns out that doesn’t mean much.",
+      "artist": "Phil Saunders",
+      "collectible": true,
+      "race": "Murloc",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Warlock Level 53.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_508.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_508_premium.gif",
+      "locale": "enUS"
+    },
+    "Murloc Raider": {
+      "cardId": "CS2_168",
+      "dbfId": "191",
+      "name": "Murloc Raider",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Alliance",
+      "rarity": "Free",
+      "cost": 1,
+      "attack": 2,
+      "health": 1,
+      "flavor": "Mrrraggglhlhghghlgh, mrgaaag blarrghlgaahahl mrgggg glhalhah a bghhll graggmgmg Garrosh mglhlhlh mrghlhlhl!!",
+      "artist": "Dan Scott",
+      "collectible": true,
+      "race": "Murloc",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Priest Level 51.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_168.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_168_premium.gif",
+      "locale": "enUS"
+    },
+    "Murloc Scout": {
+      "cardId": "EX1_506a",
+      "dbfId": "1078",
+      "name": "Murloc Scout",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "race": "Murloc",
+      "playerClass": "Neutral",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_506a.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/EX1_506a_premium.gif",
+      "locale": "enUS"
+    },
+    "Bluegill Warrior": {
+      "cardId": "CS2_173",
+      "dbfId": "739",
+      "name": "Bluegill Warrior",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 2,
+      "attack": 2,
+      "health": 1,
+      "text": "<b>Charge</b>",
+      "flavor": "He just wants a hug.   A sloppy... slimy... hug.",
+      "artist": "Jakub Kasper",
+      "collectible": true,
+      "race": "Murloc",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Paladin Level 53.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_173.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_173_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Charge"
+        }
+      ]
+    },
+    "Murloc Tidehunter": {
+      "cardId": "EX1_506",
+      "dbfId": "976",
+      "name": "Murloc Tidehunter",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 2,
+      "attack": 2,
+      "health": 1,
+      "text": "<b>Battlecry:</b> Summon a 1/1_Murloc Scout.",
+      "flavor": "\"Death will rise, from the tides!\"",
+      "artist": "Dan Scott",
+      "collectible": true,
+      "race": "Murloc",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Rogue Level 53.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_506.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_506_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Battlecry"
+        }
+      ]
+    }
+  },
+  "Totem": {
+    "Healing Totem": {
+      "cardId": "NEW1_009",
+      "dbfId": "764",
+      "name": "Healing Totem",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "rarity": "Free",
+      "cost": 1,
+      "attack": 0,
+      "health": 2,
+      "text": "At the end of your turn, restore 1 Health to all friendly minions.",
+      "race": "Totem",
+      "playerClass": "Shaman",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_009.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NEW1_009_premium.gif",
+      "locale": "enUS"
+    },
+    "Searing Totem": {
+      "cardId": "CS2_050",
+      "dbfId": "537",
+      "name": "Searing Totem",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "race": "Totem",
+      "playerClass": "Shaman",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_050.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/CS2_050_premium.gif",
+      "locale": "enUS"
+    },
+    "Stoneclaw Totem": {
+      "cardId": "CS2_051",
+      "dbfId": "850",
+      "name": "Stoneclaw Totem",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "attack": 0,
+      "health": 2,
+      "text": "<b>Taunt</b>",
+      "race": "Totem",
+      "playerClass": "Shaman",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_051.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/CS2_051_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Taunt"
+        }
+      ]
+    },
+    "Wrath of Air Totem": {
+      "cardId": "CS2_052",
+      "dbfId": "458",
+      "name": "Wrath of Air Totem",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "attack": 0,
+      "health": 2,
+      "text": "<b>Spell Damage +1</b>",
+      "race": "Totem",
+      "playerClass": "Shaman",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_052.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/CS2_052_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Spell Damage"
+        }
+      ]
+    },
+    "Flametongue Totem": {
+      "cardId": "EX1_565",
+      "dbfId": "1008",
+      "name": "Flametongue Totem",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 2,
+      "attack": 0,
+      "health": 3,
+      "text": "Adjacent minions have +2_Attack.",
+      "flavor": "Totemsmiths like to use the rarest woods for their totems.  There are even rumors of totems made of Ironbark Protectors.",
+      "artist": "Jonathan Ryder",
+      "collectible": true,
+      "race": "Totem",
+      "playerClass": "Shaman",
+      "howToGet": "Unlocked at Level 4.",
+      "howToGetGold": "Unlocked at Level 43.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_565.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_565_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "AdjacentBuff"
+        },
+        {
+          "name": "Aura"
+        }
+      ]
+    }
+  },
+  "Mech": {
+    "Mechanical Dragonling": {
+      "cardId": "EX1_025t",
+      "dbfId": "59",
+      "name": "Mechanical Dragonling",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "attack": 2,
+      "health": 1,
+      "race": "Mech",
+      "playerClass": "Neutral",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_025t.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/EX1_025t_premium.gif",
+      "locale": "enUS"
+    }
+  },
+  "Demon": {
+    "Voidwalker": {
+      "cardId": "CS2_065",
+      "dbfId": "48",
+      "name": "Voidwalker",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "attack": 1,
+      "health": 3,
+      "text": "<b>Taunt</b>",
+      "flavor": "No relation to \"The Voidsteppers\", the popular Void-based dance troupe.",
+      "artist": "Alex Horley Orlandelli",
+      "collectible": true,
+      "race": "Demon",
+      "playerClass": "Warlock",
+      "howToGet": "Unlocked at Level 1.",
+      "howToGetGold": "Unlocked at Level 36.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_065.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_065_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Taunt"
+        }
+      ]
+    },
+    "Succubus": {
+      "cardId": "EX1_306",
+      "dbfId": "592",
+      "name": "Succubus",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 2,
+      "attack": 4,
+      "health": 3,
+      "text": "<b>Battlecry:</b> Discard a random card.",
+      "flavor": "Warlocks have it pretty good.",
+      "artist": "Matt Dixon",
+      "collectible": true,
+      "race": "Demon",
+      "playerClass": "Warlock",
+      "howToGet": "Unlocked at Level 1.",
+      "howToGetGold": "Unlocked at Level 40.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_306.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_306_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Battlecry"
+        }
+      ]
+    },
+    "Dread Infernal": {
+      "cardId": "CS2_064",
+      "dbfId": "1019",
+      "name": "Dread Infernal",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 6,
+      "attack": 6,
+      "health": 6,
+      "text": "<b>Battlecry:</b> Deal 1 damage to ALL other characters.",
+      "flavor": "\"INFERNOOOOOOOOOO!\" - Jaraxxus, Eredar Lord of the Burning Legion",
+      "artist": "Zoltan & Gabor",
+      "collectible": true,
+      "race": "Demon",
+      "playerClass": "Warlock",
+      "howToGet": "Unlocked at Level 10.",
+      "howToGetGold": "Unlocked at Level 23.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_064.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_064_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Battlecry"
+        }
+      ]
+    }
+  },
+  "Elemental": {
+    "Magma Rager": {
+      "cardId": "CS2_118",
+      "dbfId": "1653",
+      "name": "Magma Rager",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "rarity": "Free",
+      "cost": 3,
+      "attack": 5,
+      "health": 1,
+      "flavor": "He likes to think he is powerful, but pretty much anyone can solo Molten Core now.",
+      "artist": "Matt Gaser",
+      "collectible": true,
+      "race": "Elemental",
+      "playerClass": "Neutral",
+      "howToGetGold": "Unlocked at Shaman Level 51.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_118.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_118_premium.gif",
+      "locale": "enUS"
+    },
+    "Water Elemental": {
+      "cardId": "CS2_033",
+      "dbfId": "395",
+      "name": "Water Elemental",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 4,
+      "attack": 3,
+      "health": 6,
+      "text": "<b>Freeze</b> any character damaged by this minion.",
+      "flavor": "Don't summon a water elemental at a party.  It'll dampen the mood.",
+      "artist": "John Avon",
+      "collectible": true,
+      "race": "Elemental",
+      "playerClass": "Mage",
+      "howToGet": "Unlocked at Level 8.",
+      "howToGetGold": "Unlocked at Level 49.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_033.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_033_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Freeze"
+        }
+      ]
+    },
+    "Fire Elemental": {
+      "cardId": "CS2_042",
+      "dbfId": "189",
+      "name": "Fire Elemental",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 6,
+      "attack": 6,
+      "health": 5,
+      "text": "<b>Battlecry:</b> Deal 3 damage.",
+      "flavor": "He can never take a bath. Ewww.",
+      "artist": "Ralph Horsley",
+      "collectible": true,
+      "race": "Elemental",
+      "playerClass": "Shaman",
+      "howToGet": "Unlocked at Level 10.",
+      "howToGetGold": "Unlocked at Level 49.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_042.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_042_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Battlecry"
+        }
+      ]
+    }
+  }
+}

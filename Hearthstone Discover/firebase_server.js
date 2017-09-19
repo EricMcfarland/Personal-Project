@@ -190,32 +190,6 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
         var cardCost = cardObject.cost;
         var cardImage = cardObject.img;
 
-
-        //STANDARD
-        if (["Classic", "Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan", "One Night in Karazhan", "Journey to Un'Goro", "Knights of the Frozen Throne"].includes(cardSet)) {
-          //---------STANDARD: By Class---------
-          ref = db.ref('discover pools').child('Standard').child('Class').child(cardClass).child(cardType).child(cardName)
-          ref.set(cardObject).then(() => {
-            // console.log(cardList[expansion][card].name + " url has been saved")
-          }).catch(function (error) {
-            console.log('Synchronization failed for: ' + cardName);
-          });
-
-          //----------STANDARD: Discover card ---------------
-          ref = db.ref('discover pools').child('Standard').child('Discover Card').child(cardName)
-          if (cardObject.hasOwnProperty('text')) {
-            if (cardObject.text.includes("<b>Discover</b>")) {
-
-              ref.set(cardObject).then(() => {
-                // console.log(cardList[expansion][card].name + " url has been saved")
-              }).catch(function (error) {
-                console.log('Synchronization failed for: ' + cardName);
-              });
-            }
-          }
-        }
-
-
         //
         // WILD
         //
@@ -227,16 +201,14 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
         ref.set(cardObject).then(() => {
           // console.log(cardList[expansion][card].name + " url has been saved")
         }).catch(function (error) {
-          console.log('setting class cardObject '+error);
+          console.log('setting class cardObject ' + error);
         });
 
         //DISCOVER
         ref = db.ref('discover pools').child('Wild').child('Discover Card').child(cardName)
         if (cardObject.hasOwnProperty('text')) {
           if (cardObject.text.includes("Discover</b>")) {
-
-            //TODO: pass the cardobject to the then()
-            ref.set(cardObject).then((snapshot) => {
+            ref.set(cardObject).then(() => {
               // console.log(snapshot.val());
               // if (cardObject.name === "Primordial Glyph") {
               //   cardRef = db.ref('discover pools').child('Wild').child('Discover Card').child('Primordial Glyph')
@@ -255,8 +227,20 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
             });
           }
         }
+        //OVERLOAD
+        ref = db.ref('discover pools').child('Wild').child('Overload').child(cardName)
+        if (cardObject.hasOwnProperty('text')) {
+          if (cardObject.text.includes("Overload</b>")) {
+            ref.set(cardObject).then(() => {
+              
+            }).catch(function (error) {
+              console.log('Setting overload cardobject: ' + error);
+            });
+          }
+        }
+        
 
-        //TAUNT
+        //TODO: UPDATE REGEXTAUNT
         ref = db.ref('discover pools').child('Wild').child('Taunt').child(cardName)
         if (cardObject.hasOwnProperty('text')) {
           if (cardObject.text.match(/(Taunt)(\\n)*/g)) {
@@ -267,6 +251,33 @@ unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards")
               console.log('Synchronization failed for: ' + cardName);
             });
           }
+
+
+          //STANDARD
+          if (["Classic", "Basic", "Whispers of the Old Gods", "Mean Streets of Gadgetzan", "One Night in Karazhan", "Journey to Un'Goro", "Knights of the Frozen Throne"].includes(cardSet)) {
+            //---------STANDARD: By Class---------
+            ref = db.ref('discover pools').child('Standard').child('Class').child(cardClass).child(cardType).child(cardName)
+            ref.set(cardObject).then(() => {
+              // console.log(cardList[expansion][card].name + " url has been saved")
+            }).catch(function (error) {
+              console.log('Synchronization failed for: ' + cardName);
+            });
+
+            //----------STANDARD: Discover card ---------------
+            ref = db.ref('discover pools').child('Standard').child('Discover Card').child(cardName)
+            if (cardObject.hasOwnProperty('text')) {
+              if (cardObject.text.includes("<b>Discover</b>")) {
+
+                ref.set(cardObject).then(() => {
+                  // console.log(cardList[expansion][card].name + " url has been saved")
+                }).catch(function (error) {
+                  console.log('Synchronization failed for: ' + cardName);
+                });
+              }
+            }
+          }
+
+
         }
 
 
